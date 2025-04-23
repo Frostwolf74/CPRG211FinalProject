@@ -94,7 +94,7 @@ public class Database
 
             for (int i = 0; i < reader.FieldCount; i++)
             {
-                row[reader.GetName(i)] = await reader.IsDBNullAsync(i) ? null : reader.GetValue(i);
+                row[reader.GetName(i).ToUpper()] = await reader.IsDBNullAsync(i) ? null : reader.GetValue(i);
             }
 
             results.Add(row);
