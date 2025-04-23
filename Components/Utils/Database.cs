@@ -57,20 +57,20 @@ public class Database
             throw;
         }
     }
-    public async Task<string> ExecuteQueryToString(string query)
+    public string ExecuteQueryToString(string query)
     {
         var result = new System.Text.StringBuilder();
 
         using var connection = OpenConnection();
         using var command = new MySqlCommand(query, connection);
-        using var reader = await command.ExecuteReaderAsync();
+        using var reader = command.ExecuteReader();
 
-        while (await reader.ReadAsync())
+        while (reader.Read())
         {
             for (int i = 0; i < reader.FieldCount; i++)
             {
                 string name = reader.GetName(i);
-                string value = await reader.IsDBNullAsync(i) ? "NULL" : reader.GetValue(i).ToString();
+                string value = reader.IsDBNull(i) ? "NULL" : reader.GetValue(i).ToString();
                 result.AppendLine($"{name}: {value}");
             }
             result.AppendLine();
@@ -78,6 +78,7 @@ public class Database
 
         return result.ToString();
     }
+
 
     public async Task<List<Dictionary<string, object>>> ExecuteQueryWithResult(string query)
     {
