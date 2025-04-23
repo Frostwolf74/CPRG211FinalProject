@@ -1,4 +1,37 @@
 ﻿@page "/"
-<h3>Main Page</h3>
 
+<div style="text-align: center">
+    <h3>Welcome to Gymmanage</h3>
+    <div>
+        <h2>Search for Customers</h2>
+    </div>
+    <div>
+        <input style="border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px; padding-left: 10px;" @bind="firstName" placeholder="First Name">
+    </div>
+    <div>
+        <input style="border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px; padding-left: 10px;" @bind="lastName" placeholder="Last Name">
+    </div>
+
+    <div class="justify-content-center">
+        <button @onclick="SearchCustomers" class="bg-success" style="border-radius: 10px; border: 0; min-width: 90px;">Search</button>
+    </div>
+
+    <div>
+        @* <p>@data.Result[0]["firstName"]</p> *@
+        @* <p>@data.Result[0]["lastName"]</p> *@
+    </div>
+
+</div>
+
+@code{
+    private string firstName { get; set; }
+    private string lastName { get; set; }
+    private List<Customer> customers = new();
+    private Task<List<Dictionary<string, object>>> data { set; get; }
+
+    private void SearchCustomers()
+    {
+        data = new Database().ExecuteQueryWithResult($"SELECT FirstName, lastName FROM customer WHERE FirstName = '{firstName}' AND LastName = '{lastName}'");
+    }
+}
 

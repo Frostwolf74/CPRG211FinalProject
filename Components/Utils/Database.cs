@@ -1,5 +1,4 @@
-﻿using Java.Sql;
-using MySqlConnector;
+﻿using MySqlConnector;
 
 namespace CPRG211FinalProject;
 
@@ -9,7 +8,7 @@ public class Database
     {
         Server = "localhost",
         Database = "CPRG211Final",
-        UserID = "app_user",
+        UserID = "root",
         Password = "password"
     };
 
@@ -44,7 +43,7 @@ public class Database
         }
     }
 
-    public void ExecuteQuery(string query)
+    public void ExecuteNonQuery(string query)
     {
         using var connection = OpenConnection();
         using var command = new MySqlCommand(query, connection);
@@ -108,19 +107,19 @@ public class Database
     public void AddCustomer(string firstName, string lastName, string email, string phoneNumber)
     {
         string query = $"INSERT INTO Customer (FirstName, LastName, Email, PhoneNumber) VALUES ('{firstName}', '{lastName}', '{email}', '{phoneNumber}')";
-        ExecuteQuery(query);
+        ExecuteNonQuery(query);
     }
 
     public void UpdateCustomer(int id, string firstName, string lastName, string email, string phoneNumber)
     {
         string query = $"UPDATE Customer SET FirstName='{firstName}', LastName='{lastName}', Email='{email}', PhoneNumber='{phoneNumber}' WHERE Id={id}";
-        ExecuteQuery(query);
+        ExecuteNonQuery(query);
     }
 
     public void RemoveCustomer(int id)
     {
         string query = $"DELETE FROM Customer WHERE Id={id}";
-        ExecuteQuery(query);
+        ExecuteNonQuery(query);
     }
 
     // Membership Methods
@@ -128,19 +127,19 @@ public class Database
     public void AddMembership(int id, string name, string type, int price)
     {
         string query = $"INSERT INTO Membership (Id, Name, Type, Price) VALUES ({id}, '{name}', '{type}', {price})";
-        ExecuteQuery(query);
+        ExecuteNonQuery(query);
     }
 
     public void UpdateMembership(int id, string name, string type, int price)
     {
         string query = $"UPDATE Membership SET Name='{name}', Type='{type}', Price={price} WHERE Id={id}";
-        ExecuteQuery(query);
+        ExecuteNonQuery(query);
     }
 
     public void RemoveMembership(int id)
     {
         string query = $"DELETE FROM Membership WHERE Id={id}";
-        ExecuteQuery(query);
+        ExecuteNonQuery(query);
     }
 
     // Equipment Methods
@@ -148,19 +147,19 @@ public class Database
     public void AddEquipment(string serialNumber, string productNumber, string description, string location)
     {
         string query = $"INSERT INTO Equipment (SerialNumber, ProductNumber, Description, Location) VALUES ('{serialNumber}', '{productNumber}', '{description}', '{location}')";
-        ExecuteQuery(query);
+        ExecuteNonQuery(query);
     }
 
     public void UpdateEquipment(string serialNumber, string productNumber, string description, string location)
     {
         string query = $"UPDATE Equipment SET ProductNumber='{productNumber}', Description='{description}', Location='{location}' WHERE SerialNumber='{serialNumber}'";
-        ExecuteQuery(query);
+        ExecuteNonQuery(query);
     }
 
     public void RemoveEquipment(string serialNumber)
     {
         string query = $"DELETE FROM Equipment WHERE SerialNumber='{serialNumber}'";
-        ExecuteQuery(query);
+        ExecuteNonQuery(query);
     }
 
     // CustomerMembership Methods
@@ -168,13 +167,13 @@ public class Database
     public void AddCustomerMembership(int customerId, int membershipId)
     {
         string query = $"INSERT INTO CustomerMembership (CustomerId, MembershipId) VALUES ({customerId}, {membershipId})";
-        ExecuteQuery(query);
+        ExecuteNonQuery(query);
     }
 
     public void RemoveCustomerMembership(int customerId, int membershipId)
     {
         string query = $"DELETE FROM CustomerMembership WHERE CustomerId = {customerId} AND MembershipId = {membershipId}";
-        ExecuteQuery(query);
+        ExecuteNonQuery(query);
     }
 
     public async Task<List<(string CustomerName, string MembershipName)>> GetCustomerMemberships()
