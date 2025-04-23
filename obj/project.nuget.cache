@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "oSM0ihKbnJ0=",
+  "dgSpecHash": "qeFptpyTcYY=",
   "success": true,
   "projectFilePath": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\CPRG211FinalProject.csproj",
   "expectedPackageFiles": [
@@ -46,6 +46,7 @@
     "C:\\Users\\Frostwolf\\.nuget\\packages\\microsoft.web.webview2\\1.0.2792.45\\microsoft.web.webview2.1.0.2792.45.nupkg.sha512",
     "C:\\Users\\Frostwolf\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22621.756\\microsoft.windows.sdk.buildtools.10.0.22621.756.nupkg.sha512",
     "C:\\Users\\Frostwolf\\.nuget\\packages\\microsoft.windowsappsdk\\1.6.240923002\\microsoft.windowsappsdk.1.6.240923002.nupkg.sha512",
+    "C:\\Users\\Frostwolf\\.nuget\\packages\\mysqlconnector\\2.4.0\\mysqlconnector.2.4.0.nupkg.sha512",
     "C:\\Users\\Frostwolf\\.nuget\\packages\\xamarin.android.glide\\4.16.0.6\\xamarin.android.glide.4.16.0.6.nupkg.sha512",
     "C:\\Users\\Frostwolf\\.nuget\\packages\\xamarin.android.glide.annotations\\4.16.0.6\\xamarin.android.glide.annotations.4.16.0.6.nupkg.sha512",
     "C:\\Users\\Frostwolf\\.nuget\\packages\\xamarin.android.glide.disklrucache\\4.16.0.6\\xamarin.android.glide.disklrucache.4.16.0.6.nupkg.sha512",
