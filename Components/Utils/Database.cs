@@ -180,4 +180,22 @@ public class Database
 
         return results;
     }
+
+    public async Task<List<(int CustomerId, int MembershipId)>> GetCustomerMembershipIds()
+    {
+        var results = new List<(int, int)>();
+        string query = "SELECT CustomerId, MembershipId FROM CustomerMembership";
+
+        var rows = await ExecuteQueryWithResult(query);
+
+        foreach (var row in rows)
+        {
+            int customerId = Convert.ToInt32(row["CustomerId"]);
+            int membershipId = Convert.ToInt32(row["MembershipId"]);
+            results.Add((customerId, membershipId));
+        }
+
+        return results;
+    }
+
 }

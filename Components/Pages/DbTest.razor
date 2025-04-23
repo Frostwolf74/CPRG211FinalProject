@@ -6,56 +6,56 @@
 
 @if (data.Count > 0)
 {
-   <table class="table">
-       <thead>
-           <tr>
-               @foreach (var column in data[0].Keys)
-               {
-                   <th>@column</th>
-               }
-           </tr>
-       </thead>
-       <tbody>
-           @foreach (var row in data)
-           {
-               <tr>
-                   @foreach (var value in row.Values)
-                   {
-                       <td>@value</td>
-                   }
-               </tr>
-           }
-       </tbody>
-   </table>
+  <table class="table">
+      <thead>
+          <tr>
+              @foreach (var column in data[0].Keys)
+              {
+                  <th>@column</th>
+              }
+          </tr>
+      </thead>
+      <tbody>
+          @foreach (var row in data)
+          {
+              <tr>
+                  @foreach (var value in row.Values)
+                  {
+                      <td>@value</td>
+                  }
+              </tr>
+          }
+      </tbody>
+  </table>
 }
 else
 {
-   <p>No data available</p>
+  <p>No data available</p>
 }
 
 <button class="btn btn-primary" @onclick="LoadData">Click me</button>
 
 @code {
-   private List<Dictionary<string, object>> data = new();
+  private List<Dictionary<string, object>> data = new();
 
-   private async Task LoadData()
-   {
-       try
-       {
-           var database = new Database();
-           var rawData = await database.GetCustomerMemberships();
+  private async Task LoadData()
+  {
+      try
+      {
+          var database = new Database();
+          var rawData = await database.GetCustomerMembershipIds();
 
-           // Transform the raw data into the required format
-           data = rawData.Select(item => new Dictionary<string, object>
-           {
-               { "CustomerName", item.CustomerName },
-               { "MembershipName", item.MembershipName }
-           }).ToList();
-       }
-       catch (Exception ex)
-       {
-           Console.WriteLine($"Error: {ex.Message}");
-           data.Clear();
-       }
-   }
+          // Transform the raw data into the required format
+          data = rawData.Select(item => new Dictionary<string, object>
+          {
+              { "CustomerId", item.CustomerId },
+              { "MembershipId", item.MembershipId }
+          }).ToList();
+      }
+      catch (Exception ex)
+      {
+          Console.WriteLine($"Error: {ex.Message}");
+          data.Clear();
+      }
+  }
 }
