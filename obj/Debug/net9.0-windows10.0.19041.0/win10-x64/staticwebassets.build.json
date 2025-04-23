@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bEEJPDtZg/4P0qVWuWWxpj0c2eDxjBEa8eGcj/+TpqQ=",
+  "Hash": "291gT+X0PXN8mQ3pFyjFfiTuXwQalVQuPzyuw46P5SM=",
   "Source": "CPRG211FinalProject",
   "BasePath": "/",
   "Mode": "Root",
@@ -10,17 +10,17 @@
     {
       "Name": "CPRG211FinalProject\\wwwroot",
       "Source": "CPRG211FinalProject",
-      "ContentRoot": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\",
       "BasePath": "/",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\1t0ms7y7r2-uqf925phnj.gz",
+      "Identity": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\1t0ms7y7r2-uqf925phnj.gz",
       "SourceId": "CPRG211FinalProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\",
+      "ContentRoot": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\",
       "BasePath": "/",
       "RelativePath": "index#[.{fingerprint=uqf925phnj}]?.html.gz",
       "AssetKind": "All",
@@ -28,20 +28,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\wwwroot\\index.html",
+      "RelatedAsset": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\index.html",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "kt7wpsby0j",
       "Integrity": "aDdIbyb0qQS3P4s019zwxY5MtQDmOtKIQT/EIBWUzn8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\wwwroot\\index.html"
+      "OriginalItemSpec": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\8ly2dwv5sb-kgtp8xtmkx.gz",
+      "Identity": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\8ly2dwv5sb-kgtp8xtmkx.gz",
       "SourceId": "CPRG211FinalProject",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\",
+      "ContentRoot": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\",
       "BasePath": "/",
       "RelativePath": "CPRG211FinalProject#[.{fingerprint=kgtp8xtmkx}]!.bundle.scp.css.gz",
       "AssetKind": "All",
@@ -49,20 +49,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\CPRG211FinalProject.bundle.scp.css",
+      "RelatedAsset": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\CPRG211FinalProject.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "acufs96dle",
       "Integrity": "prjWcf2uSfifbddKTUeYxIbxVu/WylqF0wUThniJCvk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\CPRG211FinalProject.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\CPRG211FinalProject.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\fenloq0du8-kgtp8xtmkx.gz",
+      "Identity": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\fenloq0du8-kgtp8xtmkx.gz",
       "SourceId": "CPRG211FinalProject",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\",
+      "ContentRoot": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\",
       "BasePath": "/",
       "RelativePath": "CPRG211FinalProject#[.{fingerprint=kgtp8xtmkx}]?.styles.css.gz",
       "AssetKind": "All",
@@ -70,20 +70,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\CPRG211FinalProject.styles.css",
+      "RelatedAsset": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\CPRG211FinalProject.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "acufs96dle",
       "Integrity": "prjWcf2uSfifbddKTUeYxIbxVu/WylqF0wUThniJCvk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\CPRG211FinalProject.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\CPRG211FinalProject.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\lvftehb1nf-8inm30yfxf.gz",
+      "Identity": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\lvftehb1nf-8inm30yfxf.gz",
       "SourceId": "CPRG211FinalProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\",
+      "ContentRoot": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\",
       "BasePath": "/",
       "RelativePath": "css/bootstrap/bootstrap.min.css#[.{fingerprint=8inm30yfxf}]?.map.gz",
       "AssetKind": "All",
@@ -91,20 +91,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "RelatedAsset": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "m532s4naxw",
       "Integrity": "epiz+IkftKdCVrNwM3M3b4/Co3mxoqDpjOfMrHfv/7E=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\ob328u0gp5-6gzpyzhau4.gz",
+      "Identity": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\ob328u0gp5-6gzpyzhau4.gz",
       "SourceId": "CPRG211FinalProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\",
+      "ContentRoot": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\",
       "BasePath": "/",
       "RelativePath": "css/bootstrap/bootstrap.min#[.{fingerprint=6gzpyzhau4}]?.css.gz",
       "AssetKind": "All",
@@ -112,20 +112,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "RelatedAsset": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "7l51xal3e9",
       "Integrity": "dfRdV3FWJNHUyN/ZTK8eRHslFtdOjQxpi1BEcWXtMR8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css"
+      "OriginalItemSpec": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\psoxkqmpgq-e5tk7yf482.gz",
+      "Identity": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\psoxkqmpgq-e5tk7yf482.gz",
       "SourceId": "CPRG211FinalProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\",
+      "ContentRoot": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\",
       "BasePath": "/",
       "RelativePath": "css/app#[.{fingerprint=e5tk7yf482}]?.css.gz",
       "AssetKind": "All",
@@ -133,20 +133,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\app.css",
+      "RelatedAsset": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\app.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "qfor6zdeny",
       "Integrity": "ismDfJHkNHfoqxdRjvM7D0cvQOeIn31cbNUC6dB4m9A=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\app.css"
+      "OriginalItemSpec": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\app.css"
     },
     {
-      "Identity": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\CPRG211FinalProject.styles.css",
+      "Identity": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\CPRG211FinalProject.styles.css",
       "SourceId": "CPRG211FinalProject",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\",
       "BasePath": "/",
       "RelativePath": "CPRG211FinalProject#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -161,13 +161,13 @@
       "Integrity": "ZN00JIqJsXwTW8tJRnIft9vXp6WCnX3CsTSKKSwd9Dc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\CPRG211FinalProject.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\CPRG211FinalProject.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\CPRG211FinalProject.bundle.scp.css",
+      "Identity": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\CPRG211FinalProject.bundle.scp.css",
       "SourceId": "CPRG211FinalProject",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\",
       "BasePath": "/",
       "RelativePath": "CPRG211FinalProject#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -182,13 +182,13 @@
       "Integrity": "ZN00JIqJsXwTW8tJRnIft9vXp6WCnX3CsTSKKSwd9Dc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\CPRG211FinalProject.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\CPRG211FinalProject.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\app.css",
+      "Identity": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\app.css",
       "SourceId": "CPRG211FinalProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/app#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -206,10 +206,10 @@
       "OriginalItemSpec": "wwwroot\\css\\app.css"
     },
     {
-      "Identity": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "CPRG211FinalProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/bootstrap/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -227,10 +227,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "CPRG211FinalProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/bootstrap/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -248,10 +248,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\index.html",
       "SourceId": "CPRG211FinalProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "index#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -272,7 +272,7 @@
   "Endpoints": [
     {
       "Route": "CPRG211FinalProject.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\8ly2dwv5sb-kgtp8xtmkx.gz",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\8ly2dwv5sb-kgtp8xtmkx.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -295,7 +295,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 03:47:48 GMT"
+          "Value": "Wed, 23 Apr 2025 20:45:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -327,7 +327,7 @@
     },
     {
       "Route": "CPRG211FinalProject.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\CPRG211FinalProject.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\CPRG211FinalProject.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -348,7 +348,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 03:47:48 GMT"
+          "Value": "Wed, 23 Apr 2025 20:45:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -364,7 +364,7 @@
     },
     {
       "Route": "CPRG211FinalProject.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\8ly2dwv5sb-kgtp8xtmkx.gz",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\8ly2dwv5sb-kgtp8xtmkx.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -385,7 +385,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 03:47:48 GMT"
+          "Value": "Wed, 23 Apr 2025 20:45:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -409,7 +409,7 @@
     },
     {
       "Route": "CPRG211FinalProject.kgtp8xtmkx.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\8ly2dwv5sb-kgtp8xtmkx.gz",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\8ly2dwv5sb-kgtp8xtmkx.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -432,7 +432,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 03:47:48 GMT"
+          "Value": "Wed, 23 Apr 2025 20:45:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -472,7 +472,7 @@
     },
     {
       "Route": "CPRG211FinalProject.kgtp8xtmkx.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\CPRG211FinalProject.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\CPRG211FinalProject.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -493,7 +493,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 03:47:48 GMT"
+          "Value": "Wed, 23 Apr 2025 20:45:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -517,7 +517,7 @@
     },
     {
       "Route": "CPRG211FinalProject.kgtp8xtmkx.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\8ly2dwv5sb-kgtp8xtmkx.gz",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\8ly2dwv5sb-kgtp8xtmkx.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -538,7 +538,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 03:47:48 GMT"
+          "Value": "Wed, 23 Apr 2025 20:45:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -570,7 +570,7 @@
     },
     {
       "Route": "CPRG211FinalProject.kgtp8xtmkx.styles.css",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\fenloq0du8-kgtp8xtmkx.gz",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\fenloq0du8-kgtp8xtmkx.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -593,7 +593,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 03:47:47 GMT"
+          "Value": "Wed, 23 Apr 2025 20:45:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -633,7 +633,7 @@
     },
     {
       "Route": "CPRG211FinalProject.kgtp8xtmkx.styles.css",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\CPRG211FinalProject.styles.css",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\CPRG211FinalProject.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -654,7 +654,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 03:47:47 GMT"
+          "Value": "Wed, 23 Apr 2025 20:45:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -678,7 +678,7 @@
     },
     {
       "Route": "CPRG211FinalProject.kgtp8xtmkx.styles.css.gz",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\fenloq0du8-kgtp8xtmkx.gz",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\fenloq0du8-kgtp8xtmkx.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -699,7 +699,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 03:47:47 GMT"
+          "Value": "Wed, 23 Apr 2025 20:45:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -731,7 +731,7 @@
     },
     {
       "Route": "CPRG211FinalProject.styles.css",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\fenloq0du8-kgtp8xtmkx.gz",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\fenloq0du8-kgtp8xtmkx.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -754,7 +754,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 03:47:47 GMT"
+          "Value": "Wed, 23 Apr 2025 20:45:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -786,7 +786,7 @@
     },
     {
       "Route": "CPRG211FinalProject.styles.css",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\CPRG211FinalProject.styles.css",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\CPRG211FinalProject.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -807,7 +807,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 03:47:47 GMT"
+          "Value": "Wed, 23 Apr 2025 20:45:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -823,7 +823,7 @@
     },
     {
       "Route": "CPRG211FinalProject.styles.css.gz",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\fenloq0du8-kgtp8xtmkx.gz",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\fenloq0du8-kgtp8xtmkx.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -844,7 +844,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 03:47:47 GMT"
+          "Value": "Wed, 23 Apr 2025 20:45:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -868,7 +868,7 @@
     },
     {
       "Route": "css/app.css",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\psoxkqmpgq-e5tk7yf482.gz",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\psoxkqmpgq-e5tk7yf482.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -891,7 +891,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:32:12 GMT"
+          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -923,7 +923,7 @@
     },
     {
       "Route": "css/app.css",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\app.css",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\app.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -944,7 +944,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:32:12 GMT"
+          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -960,7 +960,7 @@
     },
     {
       "Route": "css/app.css.gz",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\psoxkqmpgq-e5tk7yf482.gz",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\psoxkqmpgq-e5tk7yf482.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -981,7 +981,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:32:12 GMT"
+          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1005,7 +1005,7 @@
     },
     {
       "Route": "css/app.e5tk7yf482.css",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\psoxkqmpgq-e5tk7yf482.gz",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\psoxkqmpgq-e5tk7yf482.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1028,7 +1028,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:32:12 GMT"
+          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1068,7 +1068,7 @@
     },
     {
       "Route": "css/app.e5tk7yf482.css",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\app.css",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\app.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1089,7 +1089,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:32:12 GMT"
+          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1113,7 +1113,7 @@
     },
     {
       "Route": "css/app.e5tk7yf482.css.gz",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\psoxkqmpgq-e5tk7yf482.gz",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\psoxkqmpgq-e5tk7yf482.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1134,7 +1134,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:32:12 GMT"
+          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1166,7 +1166,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.6gzpyzhau4.css",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\ob328u0gp5-6gzpyzhau4.gz",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\ob328u0gp5-6gzpyzhau4.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1189,7 +1189,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:32:12 GMT"
+          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1229,7 +1229,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.6gzpyzhau4.css",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1250,7 +1250,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:32:12 GMT"
+          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1274,7 +1274,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.6gzpyzhau4.css.gz",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\ob328u0gp5-6gzpyzhau4.gz",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\ob328u0gp5-6gzpyzhau4.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1295,7 +1295,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:32:12 GMT"
+          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1327,7 +1327,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\ob328u0gp5-6gzpyzhau4.gz",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\ob328u0gp5-6gzpyzhau4.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1350,7 +1350,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:32:12 GMT"
+          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1382,7 +1382,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1403,7 +1403,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:32:12 GMT"
+          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1419,7 +1419,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css.8inm30yfxf.map",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\lvftehb1nf-8inm30yfxf.gz",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\lvftehb1nf-8inm30yfxf.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1442,7 +1442,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:32:12 GMT"
+          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1482,7 +1482,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css.8inm30yfxf.map",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1503,7 +1503,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:32:12 GMT"
+          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1527,7 +1527,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css.8inm30yfxf.map.gz",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\lvftehb1nf-8inm30yfxf.gz",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\lvftehb1nf-8inm30yfxf.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1548,7 +1548,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:32:12 GMT"
+          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1580,7 +1580,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css.gz",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\ob328u0gp5-6gzpyzhau4.gz",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\ob328u0gp5-6gzpyzhau4.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1601,7 +1601,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:32:12 GMT"
+          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1625,7 +1625,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css.map",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\lvftehb1nf-8inm30yfxf.gz",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\lvftehb1nf-8inm30yfxf.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1648,7 +1648,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:32:12 GMT"
+          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1680,7 +1680,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css.map",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1701,7 +1701,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:32:12 GMT"
+          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1717,7 +1717,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css.map.gz",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\lvftehb1nf-8inm30yfxf.gz",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\lvftehb1nf-8inm30yfxf.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1738,7 +1738,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:32:12 GMT"
+          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1762,7 +1762,7 @@
     },
     {
       "Route": "index.html",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\1t0ms7y7r2-uqf925phnj.gz",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\1t0ms7y7r2-uqf925phnj.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1785,7 +1785,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:32:12 GMT"
+          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1817,7 +1817,7 @@
     },
     {
       "Route": "index.html",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\wwwroot\\index.html",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1838,7 +1838,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:32:12 GMT"
+          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1854,7 +1854,7 @@
     },
     {
       "Route": "index.html.gz",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\1t0ms7y7r2-uqf925phnj.gz",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\1t0ms7y7r2-uqf925phnj.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1875,7 +1875,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:32:12 GMT"
+          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1899,7 +1899,7 @@
     },
     {
       "Route": "index.uqf925phnj.html",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\1t0ms7y7r2-uqf925phnj.gz",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\1t0ms7y7r2-uqf925phnj.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1922,7 +1922,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:32:12 GMT"
+          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1962,7 +1962,7 @@
     },
     {
       "Route": "index.uqf925phnj.html",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\wwwroot\\index.html",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1983,7 +1983,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:32:12 GMT"
+          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2007,7 +2007,7 @@
     },
     {
       "Route": "index.uqf925phnj.html.gz",
-      "AssetFile": "C:\\Users\\Frostwolf\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\1t0ms7y7r2-uqf925phnj.gz",
+      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\compressed\\1t0ms7y7r2-uqf925phnj.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2028,7 +2028,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 22 Apr 2025 22:32:12 GMT"
+          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
         },
         {
           "Name": "Cache-Control",
