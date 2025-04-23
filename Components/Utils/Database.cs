@@ -1,4 +1,5 @@
-﻿using MySqlConnector;
+﻿using Java.Sql;
+using MySqlConnector;
 
 namespace CPRG211FinalProject;
 
@@ -56,6 +57,27 @@ public class Database
             Console.WriteLine($"Error: {ex.Message}");
             throw;
         }
+    }
+    public async Task<string> ExecuteQueryToString(string query)
+    {
+        var result = new System.Text.StringBuilder();
+
+        using var connection = OpenConnection();
+        using var command = new MySqlCommand(query, connection);
+        using var reader = await command.ExecuteReaderAsync();
+
+        while (await reader.ReadAsync())
+        {
+            for (int i = 0; i < reader.FieldCount; i++)
+            {
+                string name = reader.GetName(i);
+                string value = await reader.IsDBNullAsync(i) ? "NULL" : reader.GetValue(i).ToString();
+                result.AppendLine($"{name}: {value}");
+            }
+            result.AppendLine();
+        }
+
+        return result.ToString();
     }
 
     public async Task<List<Dictionary<string, object>>> ExecuteQueryWithResult(string query)
