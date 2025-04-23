@@ -2,16 +2,53 @@
 
 <h1>Counter</h1>
 
-<p role="status">Current count: @currentCount</p>
+<p role="status">Query Result:</p>
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+@if (data.Count > 0)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                @foreach (var column in data[0].Keys)
+                {
+                    <th>@column</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var row in data)
+            {
+                <tr>
+                    @foreach (var value in row.Values)
+                    {
+                        <td>@value</td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No data available</p>
+}
+
+<button class="btn btn-primary" @onclick="LoadData">Click me</button>
 
 @code {
-    private int currentCount = 0;
+    private List<Dictionary<string, object>> data = new();
 
-    private void IncrementCount()
+    private async Task LoadData()
     {
-        currentCount++;
+        try
+        {
+            var database = new Database();
+            data = await database.ExecuteQueryWithResult("SELECT * FROM Student");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error: {ex.Message}");
+            data.Clear();
+        }
     }
-
 }
