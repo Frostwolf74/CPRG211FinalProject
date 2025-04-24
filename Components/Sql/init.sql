@@ -8,11 +8,11 @@ GRANT ALL PRIVILEGES ON CPRG211Final.* TO 'app_user'@'localhost';
 FLUSH PRIVILEGES;
 
 
-CREATE TABLE Membership (
+CREATE TABLE Memberships (
     Id INT PRIMARY KEY,
     Name VARCHAR(100),
     Type VARCHAR(50),
-    Price INT
+    Price DOUBLE PRECISION
 );
 
 CREATE TABLE Customer (
@@ -28,7 +28,7 @@ CREATE TABLE CustomerMembership (
     MembershipId INT,
     PRIMARY KEY (CustomerId, MembershipId),
     FOREIGN KEY (CustomerId) REFERENCES Customer(Id) ON DELETE CASCADE,
-    FOREIGN KEY (MembershipId) REFERENCES Membership(Id) ON DELETE CASCADE
+    FOREIGN KEY (MembershipId) REFERENCES Memberships(Id) ON DELETE CASCADE
 );
 
 CREATE TABLE Equipment (
@@ -40,9 +40,9 @@ CREATE TABLE Equipment (
 
 
 
-INSERT INTO Membership VALUES
-(1, 'Basic Access', 'Monthly', 30),
-(2, 'Premium Access', 'Monthly', 60),
+INSERT INTO Memberships VALUES
+(1, 'Basic Access', 'Monthly', 30.99),
+(2, 'Premium Access', 'Monthly', 60.59),
 (3, 'Student Plan', 'Yearly', 300),
 (4, 'Family Plan', 'Yearly', 500);
 

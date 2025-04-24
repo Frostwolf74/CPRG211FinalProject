@@ -6,10 +6,10 @@
         <h2>Locate customers in database</h2>
     </div>
     <div>
-        <input style="border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px; padding-left: 10px;" @bind="firstName" placeholder="First Name">
+        <input style="border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px; padding-left: 10px;" @bind="CfirstName" placeholder="First Name">
     </div>
     <div>
-        <input style="border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px; padding-left: 10px;" @bind="lastName" placeholder="Last Name">
+        <input style="border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px; padding-left: 10px;" @bind="ClastName" placeholder="Last Name">
     </div>
 
     <div class="justify-content-center">
@@ -21,7 +21,7 @@
     @if (customers.Count != 0)
     {
         <div>
-            <h3>Customer(s) found:</h3>
+            <h5>Customer(s) found:</h5>
         </div>
     }
     
@@ -46,34 +46,138 @@
         </div>
     }
     
-    @if (searchReturnedNone)
+    @if (searchReturnedNone1)
+    {
+        <p style="color: #2c3034;">No results found</p>
+    }
+    
+    <br/><br/>
+    
+    <div>
+        <h4>Locate equipment in database</h4>
+    </div>
+    <div>
+        <input style="border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px; padding-left: 10px;" @bind="ESerialNumber" placeholder="Serial Number">
+    </div>
+
+    <div class="justify-content-center">
+        <button @onclick="SearchEquipment" class="bg-success" style="border-radius: 10px; border: 0; min-width: 90px;">Search</button>
+    </div>
+
+    <br/>
+    
+    @if (equipment.Count != 0)
+    {
+        <div>
+            <h5>Equipment found:</h5>
+        </div>
+    }
+    
+    @foreach (var eq in equipment)
+    {
+        <div class="rounded px-3 py-2 mb-2" style="background-color: #d9d9d9; min-width: 500px">
+            <div class="w-100" style="min-width: fit-content;">
+                <div class="row">
+                    <div class="col-6">
+                        <div>SN: @eq.SerialNumber</div>
+                        <div>PN: @eq.ProductNumber</div>
+                    </div>
+                    <div class="col-6">
+                        <div>@eq.Description</div>
+                        <div>@eq.Location</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    
+    @if (searchReturnedNone2)
+    {
+        <p style="color: #2c3034;">No results found</p>
+    }
+    
+    <br/><br/>
+    
+    <div>
+        <h4>Locate memberships in database</h4>
+    </div>
+    <div>
+        <input style="border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px; padding-left: 10px;" @bind="MId" placeholder="ID">
+    </div>
+
+    <div class="justify-content-center">
+        <button @onclick="SearchMemberships" class="bg-success" style="border-radius: 10px; border: 0; min-width: 90px;">Search</button>
+    </div>
+    
+    <br/>
+    
+    @if (memberships.Count != 0)
+    {
+        <div>
+            <h5>Memberships found:</h5>
+        </div>
+    }
+    
+    @foreach (var membership in memberships)
+    {
+        <div class="rounded px-3 py-2 mb-2" style="background-color: #d9d9d9; min-width: 500px">
+            <div class="w-100" style="min-width: fit-content;">
+                <div class="row">
+                    <div class="col-6">
+                        <div>SN: @membership.Id</div>
+                        <div>PN: @membership.Name</div>
+                    </div>
+                    <div class="col-6">
+                        <div>@membership.Type</div>
+                        <div>@membership.Price</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    
+    @if (searchReturnedNone3)
     {
         <p style="color: #2c3034;">No results found</p>
     }
 </div>
 
 @code {
-    private string firstName { get; set; }
-    private string lastName { get; set; }
+    // customer
+    private string CfirstName { get; set; }
+    private string ClastName { get; set; }
     private List<CustomerObj> customers = new();
-    private bool searchReturnedNone { get; set; }
+    private bool searchReturnedNone1 { get; set; }
+    
+    // equipment
+    private string ESerialNumber { get; set; }
+    private string EProductNumber { get; set; }
+    private string EDescription { get; set; }
+    private string ELocation { get; set; }
+    private List<EquipmentObj> equipment = new();
+    private bool searchReturnedNone2 { get; set; }
+    
+    // memberships
+    private string MName { get; set; } 
+    private string MType { get; set; } 
+    private int? MId { get; set; } 
+    private int? MPrice { get; set; }
+    private List<MembershipObj> memberships = new();
+    private bool searchReturnedNone3 { get; set; }
 
     private async Task SearchCustomers()
     {
-        if (string.IsNullOrWhiteSpace(firstName) && string.IsNullOrWhiteSpace(lastName))
+        if (string.IsNullOrWhiteSpace(CfirstName) && string.IsNullOrWhiteSpace(ClastName))
         {
-            searchReturnedNone = true;
-
-            if (customers.Count != 0) customers.Clear();
-            
+            searchReturnedNone1 = true;
+            if (customers.Count != 0) customers.Clear(); // clear all objects from previous search on next search
             return;
         }
         
-        searchReturnedNone = false;
         customers.Clear();
         
-        var data = await new Database().ExecuteQueryWithResult($"SELECT * FROM customer WHERE FirstName = '{firstName}' OR LastName = '{lastName}'");
-        
+        var data = await new Database().ExecuteQueryWithResult($"SELECT * FROM customer WHERE FirstName = '{CfirstName}' OR LastName = '{ClastName}'");
+
         foreach (var customer in data)
         {
             customers.Add(new CustomerObj(
@@ -83,14 +187,73 @@
                 (string)customer["PHONENUMBER"],
                 null // TODO implement later
             ));
-            
-            if ((string)customer["FIRSTNAME"] == firstName && (string)customer["LASTNAME"] == lastName) // stop iterating if an exact match is found
-            {
-                break;
-            }
+
+            if ((string)customer["FIRSTNAME"] == CfirstName && (string)customer["LASTNAME"] == ClastName) break; // stop iterating if an exact match is found
         }
 
-        firstName = null;
-        lastName = null;
+        searchReturnedNone1 = customers.Count == 0;
+        
+        CfirstName = null;
+        ClastName = null;
+    }
+    
+    private async Task SearchEquipment()
+    {
+        if (string.IsNullOrWhiteSpace(ESerialNumber))
+        {
+            searchReturnedNone2 = true;
+            if (equipment.Count != 0) equipment.Clear(); // clear all objects from previous search on next search
+            return;
+        }
+        
+        equipment.Clear();
+        
+        var data = await new Database().ExecuteQueryWithResult($"SELECT * FROM equipment WHERE SerialNumber = '{ESerialNumber}'");
+        
+        foreach (var eq in data)
+        {
+            equipment.Add(new EquipmentObj(
+                (string)eq["SERIALNUMBER"],
+                (string)eq["PRODUCTNUMBER"],
+                (string)eq["DESCRIPTION"],
+                (string)eq["LOCATION"]
+            ));
+
+            if ((string)eq["SERIALNUMBER"] == ESerialNumber) break; // stop iterating if an exact match is found
+        }
+        
+        searchReturnedNone2 = equipment.Count == 0;
+
+        ESerialNumber = null;
+    }
+    
+    private async Task SearchMemberships()
+    {
+        if (MId == null) 
+        {
+            searchReturnedNone3 = true;
+            if (memberships.Count != 0) memberships.Clear(); // clear all objects from previous search on next search
+            return;
+        }
+        
+        memberships.Clear();
+        
+        var data = await new Database().ExecuteQueryWithResult($"SELECT * FROM memberships WHERE Id = {MId}");
+        
+        foreach (var membership in data)
+        {
+            memberships.Add(new MembershipObj(
+                (string)membership["NAME"],
+                (string)membership["TYPE"],
+                (int)membership["ID"],
+                (double)membership["PRICE"]
+            ));
+
+            if ((int)membership["ID"] == MId) break; // stop iterating if an exact match is found
+        }
+        
+        searchReturnedNone3 = memberships.Count == 0;
+
+        MId = null;
     }
 }

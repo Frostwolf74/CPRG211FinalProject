@@ -1,11 +1,11 @@
 ﻿namespace CPRG211FinalProject.Components.Utils;
 
-public class MembershipObj(string name, string type, int id, int price)
+public class MembershipObj(string name, string type, int id, double price)
 {
     public string Name { get; set; } = name;
     public string Type { get; set; } = type;
     public int Id { get; set; } = id;
-    public int Price { get; set; } = price;
+    public double Price { get; set; } = price;
 
     public override string ToString()
     {
