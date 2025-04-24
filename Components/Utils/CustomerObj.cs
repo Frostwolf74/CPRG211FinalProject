@@ -1,7 +1,8 @@
 ﻿namespace CPRG211FinalProject.Components.Utils;
 
-public class CustomerObj(string firstName, string lastName, string email, string? phoneNumber, List<MembershipObj>? memberships)
+public class CustomerObj(int Id, string firstName, string lastName, string email, string? phoneNumber, List<MembershipObj>? memberships)
 {
+    public int Id { get; set; } = Id;
     public string FirstName { get; set; } = firstName;
     public string LastName { get; set; } = lastName;
     public string Email { get; set; } = email;
@@ -10,6 +11,6 @@ public class CustomerObj(string firstName, string lastName, string email, string
 
     public override string ToString()
     {
-        return $"First Name: {FirstName}\nLast Name: {LastName}\nEmail: {Email}\nPhoneNumber: {PhoneNumber}";
+        return $"Id: {Id}\nFirst Name: {FirstName}\nLast Name: {LastName}\nEmail: {Email}\nPhoneNumber: {PhoneNumber}";
     }
 }

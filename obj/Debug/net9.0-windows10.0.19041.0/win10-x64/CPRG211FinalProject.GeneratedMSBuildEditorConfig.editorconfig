@@ -9,7 +9,7 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CPRG211FinalProject
 build_property.RootNamespace = CPRG211FinalProject
-build_property.ProjectDir = C:\Users\Administrator\RiderProjects\CPRG211FinalProject\
+build_property.ProjectDir = C:\Users\SyncthingServiceAcct\Class work\OOP2\final project\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTAotOptimizerEnabled = true
@@ -23,82 +23,82 @@ build_property.CsWinRTUseWindowsUIXamlProjections = false
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Administrator\RiderProjects\CPRG211FinalProject
+build_property.MSBuildProjectDirectory = C:\Users\SyncthingServiceAcct\Class work\OOP2\final project
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Administrator/RiderProjects/CPRG211FinalProject/App.xaml]
+[C:/Users/SyncthingServiceAcct/Class work/OOP2/final project/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CPRG211FinalProject.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/RiderProjects/CPRG211FinalProject/MainPage.xaml]
+[C:/Users/SyncthingServiceAcct/Class work/OOP2/final project/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CPRG211FinalProject.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/RiderProjects/CPRG211FinalProject/Components/Pages/Customer.razor]
+[C:/Users/SyncthingServiceAcct/Class work/OOP2/final project/Components/Pages/Customer.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDdXN0b21lci5yYXpvcg==
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/RiderProjects/CPRG211FinalProject/Components/Pages/DbTest.razor]
+[C:/Users/SyncthingServiceAcct/Class work/OOP2/final project/Components/Pages/DbTest.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEYlRlc3QucmF6b3I=
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/RiderProjects/CPRG211FinalProject/Components/Pages/Equipment.razor]
+[C:/Users/SyncthingServiceAcct/Class work/OOP2/final project/Components/Pages/Equipment.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcXVpcG1lbnQucmF6b3I=
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/RiderProjects/CPRG211FinalProject/Components/Pages/Home.razor]
+[C:/Users/SyncthingServiceAcct/Class work/OOP2/final project/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/RiderProjects/CPRG211FinalProject/Components/Pages/Membership.razor]
+[C:/Users/SyncthingServiceAcct/Class work/OOP2/final project/Components/Pages/Membership.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNZW1iZXJzaGlwLnJhem9y
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/RiderProjects/CPRG211FinalProject/Components/Routes.razor]
+[C:/Users/SyncthingServiceAcct/Class work/OOP2/final project/Components/Routes.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/RiderProjects/CPRG211FinalProject/Components/_Imports.razor]
+[C:/Users/SyncthingServiceAcct/Class work/OOP2/final project/Components/_Imports.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrator/RiderProjects/CPRG211FinalProject/Components/Layout/MainLayout.razor]
+[C:/Users/SyncthingServiceAcct/Class work/OOP2/final project/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = b-uz0r3o7gfl
 
-[C:/Users/Administrator/RiderProjects/CPRG211FinalProject/Components/Layout/NavMenu.razor]
+[C:/Users/SyncthingServiceAcct/Class work/OOP2/final project/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==

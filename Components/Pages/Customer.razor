@@ -1,6 +1,227 @@
-﻿@page "/Customer"
-<h3>Customer</h3>
+﻿@page "/customer"
+@using CPRG211FinalProject.Components.Utils
+
+<div style="text-align: center">
+    <div>
+        <h2>Locate customers in database</h2>
+    </div>
+    <div>
+        <input @bind="firstName" placeholder="First Name" style="border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px; padding-left: 10px;" />
+    </div>
+    <div>
+        <input @bind="lastName" placeholder="Last Name" style="border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px; padding-left: 10px;" />
+    </div>
+
+    <div class="justify-content-center">
+        <button @onclick="SearchCustomers" class="bg-success" style="border-radius: 10px; border: 0; min-width: 90px;">Search</button>
+        <button @onclick="RefreshCustomers" class="bg-success" style="border-radius: 10px; border: 0; min-width: 90px;">Refresh</button>
+        <button @onclick="ToggleAddCustomerMenu" class="bg-success" style="border-radius: 10px; border: 0; min-width: 90px;">Add Customer</button>
+    </div>
+
+    <br />
+
+    @if (customers.Count != 0)
+    {
+        <div>
+            <h3>Customer(s) found:</h3>
+        </div>
+    }
+
+    @foreach (var customer in customers)
+    {
+        <div class="rounded px-3 py-2 mb-2" style="background-color: #d9d9d9; min-width: 500px" @onclick="() => OpenEditCustomerMenu(customer)">
+            <div class="w-100" style="min-width: fit-content;">
+                <div class="row">
+                    <div class="col-6">
+                        <div>@customer.FirstName</div>
+                        <div>@customer.LastName</div>
+                    </div>
+                    <div class="col-6">
+                        <div>@customer.Email</div>
+                        <div>@customer.PhoneNumber</div>
+                    </div>
+                    <div class="col-6">
+                        <div>@customer.Memberships</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+    @if (searchReturnedNone)
+    {
+        <p style="color: #2c3034;">No results found</p>
+    }
+</div>
+
+@if (showAddCustomerMenu)
+{
+    <div style="position: fixed; top: 0; right: 0; width: 300px; height: 100%; background-color: #f8f9fa; box-shadow: -2px 0 5px rgba(0,0,0,0.1); padding: 20px;">
+        <h3>@(isEditingCustomer ? "Edit Customer" : "Add Customer")</h3>
+        <div>
+            <input @bind="newCustomerFirstName" placeholder="First Name" style="width: 100%;border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px;" />
+        </div>
+        <div>
+            <input @bind="newCustomerLastName" placeholder="Last Name" style="width: 100%;border: 0; border-radius: 5px;background-color: #d9d9d9; margin-bottom: 10px;" />
+        </div>
+        <div>
+            <input @bind="newCustomerEmail" placeholder="Email" style="width: 100%; border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px;" />
+        </div>
+        <div>
+            <input @bind="newCustomerPhoneNumber" placeholder="Phone Number" style="width: 100%; border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px;" />
+        </div>
+        <button @onclick="SaveCustomer" class="bg-success" style="width: 100%; border: 0; border-radius: 5px; border: 0; margin-bottom: 10px;">Save</button>
+        @if (isEditingCustomer)
+        {
+            <button @onclick="DeleteCustomer" class="bg-danger" style="width: 100%; border: 0; border-radius: 5px; border: 0; margin-bottom: 10px;">Delete</button>
+        }
+        <button @onclick="ToggleAddCustomerMenu" class="bg-success" style="width: 100%; border: 0; border-radius: 5px; border: 0;">Cancel</button>
+    </div>
+}
+
 
 @code {
-    
+    private string firstName { get; set; }
+    private string lastName { get; set; }
+    private List<CustomerObj> customers = new();
+    private bool searchReturnedNone { get; set; }
+    private bool showAddCustomerMenu { get; set; } = false;
+    private bool isEditingCustomer { get; set; } = false;
+    private CustomerObj? selectedCustomer { get; set; }
+    private string newCustomerFirstName { get; set; }
+    private string newCustomerLastName { get; set; }
+    private string newCustomerEmail { get; set; }
+    private string newCustomerPhoneNumber { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadAllCustomers();
+    }
+
+    private async Task LoadAllCustomers()
+    {
+        customers.Clear();
+        var data = await new Database().ExecuteQueryWithResult("SELECT * FROM customer");
+
+        foreach (var customer in data)
+        {
+            customers.Add(new CustomerObj(
+                Convert.ToInt32(customer["ID"]),
+                (string)customer["FIRSTNAME"],
+                (string)customer["LASTNAME"],
+                (string)customer["EMAIL"],
+                (string)customer["PHONENUMBER"],
+                null
+            ));
+        }
+    }
+
+    private async Task SearchCustomers()
+    {
+        if (string.IsNullOrWhiteSpace(firstName) && string.IsNullOrWhiteSpace(lastName))
+        {
+            searchReturnedNone = true;
+            customers.Clear();
+            return;
+        }
+
+        searchReturnedNone = false;
+        customers.Clear();
+
+        var data = await new Database().ExecuteQueryWithResult($"SELECT * FROM customer WHERE FirstName = '{firstName}' OR LastName = '{lastName}'");
+
+        foreach (var customer in data)
+        {
+            customers.Add(new CustomerObj(
+                Convert.ToInt32(customer["ID"]),
+                (string)customer["FIRSTNAME"],
+                (string)customer["LASTNAME"],
+                (string)customer["EMAIL"],
+                (string)customer["PHONENUMBER"],
+                null
+            ));
+
+            if ((string)customer["FIRSTNAME"] == firstName && (string)customer["LASTNAME"] == lastName)
+            {
+                break;
+            }
+        }
+
+        firstName = null;
+        lastName = null;
+    }
+
+    private async Task RefreshCustomers()
+    {
+        firstName = string.Empty;
+        lastName = string.Empty;
+        searchReturnedNone = false;
+        await LoadAllCustomers();
+    }
+
+    private void ToggleAddCustomerMenu()
+    {
+        showAddCustomerMenu = !showAddCustomerMenu;
+        if (!showAddCustomerMenu)
+        {
+            ResetCustomerForm();
+        }
+    }
+
+    private void OpenEditCustomerMenu(CustomerObj customer)
+    {
+        selectedCustomer = customer;
+        newCustomerFirstName = customer.FirstName;
+        newCustomerLastName = customer.LastName;
+        newCustomerEmail = customer.Email;
+        newCustomerPhoneNumber = customer.PhoneNumber ?? string.Empty;
+        isEditingCustomer = true;
+        showAddCustomerMenu = true;
+    }
+
+    private async Task SaveCustomer()
+    {
+        if (isEditingCustomer && selectedCustomer != null)
+        {
+            selectedCustomer.FirstName = newCustomerFirstName;
+            selectedCustomer.LastName = newCustomerLastName;
+            selectedCustomer.Email = newCustomerEmail;
+            selectedCustomer.PhoneNumber = newCustomerPhoneNumber;
+
+            new Database().UpdateCustomer(
+                selectedCustomer.Id,
+                selectedCustomer.FirstName,
+                selectedCustomer.LastName,
+                selectedCustomer.Email,
+                selectedCustomer.PhoneNumber
+            );
+        }
+        else
+        {
+            new Database().AddCustomer(newCustomerFirstName, newCustomerLastName, newCustomerEmail, newCustomerPhoneNumber);
+        }
+
+        await LoadAllCustomers();
+        ToggleAddCustomerMenu();
+    }
+
+    private void ResetCustomerForm()
+    {
+        newCustomerFirstName = string.Empty;
+        newCustomerLastName = string.Empty;
+        newCustomerEmail = string.Empty;
+        newCustomerPhoneNumber = string.Empty;
+        isEditingCustomer = false;
+        selectedCustomer = null;
+    }
+
+    private async Task DeleteCustomer()
+    {
+        if (selectedCustomer != null)
+        {
+            new Database().RemoveCustomer(selectedCustomer.Id);
+            await LoadAllCustomers();
+            ToggleAddCustomerMenu();
+        }
+    }
 }

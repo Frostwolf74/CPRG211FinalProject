@@ -77,12 +77,14 @@
         foreach (var customer in data)
         {
             customers.Add(new CustomerObj(
+                Convert.ToInt32(customer["ID"]),
                 (string)customer["FIRSTNAME"],
                 (string)customer["LASTNAME"],
                 (string)customer["EMAIL"],
                 (string)customer["PHONENUMBER"],
-                null // TODO implement later
-            ));
+                null
+                ));
+
             
             if ((string)customer["FIRSTNAME"] == firstName && (string)customer["LASTNAME"] == lastName) // stop iterating if an exact match is found
             {

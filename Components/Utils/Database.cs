@@ -8,7 +8,7 @@ public class Database
     {
         Server = "localhost",
         Database = "CPRG211Final",
-        UserID = "root",
+        UserID = "app_user",
         Password = "password"
     };
 
@@ -219,5 +219,7 @@ public class Database
 
         return results;
     }
+
+
 
 }
