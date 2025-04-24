@@ -1,8 +1,0 @@
-C:\Users\SyncthingServiceAcct\Class work\OOP2\final project\wwwroot\index.html
-C:\Users\SyncthingServiceAcct\Class work\OOP2\final project\wwwroot\css\bootstrap\bootstrap.min.css.map
-C:\Users\SyncthingServiceAcct\Class work\OOP2\final project\wwwroot\css\bootstrap\bootstrap.min.css
-C:\Users\SyncthingServiceAcct\Class work\OOP2\final project\wwwroot\css\app.css
-wwwroot\css\app.css
-wwwroot\css\bootstrap\bootstrap.min.css
-wwwroot\css\bootstrap\bootstrap.min.css.map
-wwwroot\index.html

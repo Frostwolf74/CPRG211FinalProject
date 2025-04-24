@@ -3,7 +3,7 @@
 
 <div style="text-align: center">
     <div>
-        <h2>Locate customers in database</h2>
+        <h4>Locate customers in database</h4>
     </div>
     <div>
         <input style="border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px; padding-left: 10px;" @bind="CfirstName" placeholder="First Name">
@@ -144,24 +144,18 @@
 
 @code {
     // customer
-    private string CfirstName { get; set; }
-    private string ClastName { get; set; }
+    private string? CfirstName { get; set; }
+    private string? ClastName { get; set; }
     private List<CustomerObj> customers = new();
     private bool searchReturnedNone1 { get; set; }
     
     // equipment
-    private string ESerialNumber { get; set; }
-    private string EProductNumber { get; set; }
-    private string EDescription { get; set; }
-    private string ELocation { get; set; }
+    private string? ESerialNumber { get; set; }
     private List<EquipmentObj> equipment = new();
     private bool searchReturnedNone2 { get; set; }
     
     // memberships
-    private string MName { get; set; } 
-    private string MType { get; set; } 
     private int? MId { get; set; } 
-    private int? MPrice { get; set; }
     private List<MembershipObj> memberships = new();
     private bool searchReturnedNone3 { get; set; }
 
@@ -194,7 +188,7 @@
 
         searchReturnedNone1 = customers.Count == 0;
         
-        CfirstName = null;
+        CfirstName = null; // reset text fields
         ClastName = null;
     }
     
@@ -225,7 +219,7 @@
         
         searchReturnedNone2 = equipment.Count == 0;
 
-        ESerialNumber = null;
+        ESerialNumber = null; // reset text fields
     }
     
     private async Task SearchMemberships()
@@ -255,6 +249,6 @@
         
         searchReturnedNone3 = memberships.Count == 0;
 
-        MId = null;
+        MId = null; // reset text fields
     }
 }
