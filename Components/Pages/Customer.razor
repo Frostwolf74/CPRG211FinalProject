@@ -29,7 +29,7 @@
 
     @foreach (var customer in customers)
     {
-        <div class="rounded px-3 py-2 mb-2" style="background-color: #d9d9d9; min-width: 500px" @onclick="() => OpenEditCustomerMenu(customer)">
+        <div class="rounded px-3 py-2 mb-2" style="background-color: #d9d9d9; min-width: 500px; cursor: pointer;" @onclick="() => OpenEditCustomerMenu(customer)">
             <div class="w-100" style="min-width: fit-content;">
                 <div class="row">
                     <div class="col-6">
@@ -224,4 +224,4 @@
             ToggleAddCustomerMenu();
         }
     }
-}
+}+
