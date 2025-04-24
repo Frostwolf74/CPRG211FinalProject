@@ -1,5 +1,6 @@
 ﻿@page "/"
 @using CPRG211FinalProject.Components.Utils
+@inject IJSRuntime JSRuntime
 
 <div style="text-align: center">
     <div>
@@ -46,7 +47,7 @@
         </div>
     }
     
-    @if (searchReturnedNone1)
+    @if (SearchReturnedNone1)
     {
         <p style="color: #2c3034;">No results found</p>
     }
@@ -91,7 +92,7 @@
         </div>
     }
     
-    @if (searchReturnedNone2)
+    @if (SearchReturnedNone2)
     {
         <p style="color: #2c3034;">No results found</p>
     }
@@ -124,8 +125,8 @@
             <div class="w-100" style="min-width: fit-content;">
                 <div class="row">
                     <div class="col-6">
-                        <div>SN: @membership.Id</div>
-                        <div>PN: @membership.Name</div>
+                        <div>@membership.Id</div>
+                        <div>@membership.Name</div>
                     </div>
                     <div class="col-6">
                         <div>@membership.Type</div>
@@ -136,7 +137,7 @@
         </div>
     }
     
-    @if (searchReturnedNone3)
+    @if (SearchReturnedNone3)
     {
         <p style="color: #2c3034;">No results found</p>
     }
@@ -147,46 +148,57 @@
     private string? CfirstName { get; set; }
     private string? ClastName { get; set; }
     private List<CustomerObj> customers = new();
-    private bool searchReturnedNone1 { get; set; }
+    private bool SearchReturnedNone1 { get; set; }
     
     // equipment
     private string? ESerialNumber { get; set; }
     private List<EquipmentObj> equipment = new();
-    private bool searchReturnedNone2 { get; set; }
+    private bool SearchReturnedNone2 { get; set; }
     
     // memberships
-    private int? MId { get; set; } 
+    private string? MId { get; set; } 
     private List<MembershipObj> memberships = new();
-    private bool searchReturnedNone3 { get; set; }
+    private bool SearchReturnedNone3 { get; set; }
 
     private async Task SearchCustomers()
     {
-        if (string.IsNullOrWhiteSpace(CfirstName) && string.IsNullOrWhiteSpace(ClastName))
+        try
         {
-            searchReturnedNone1 = true;
-            if (customers.Count != 0) customers.Clear(); // clear all objects from previous search on next search
-            return;
-        }
+            if (string.IsNullOrWhiteSpace(CfirstName) && string.IsNullOrWhiteSpace(ClastName))
+            {
+                SearchReturnedNone1 = true;
+                if (customers.Count != 0) customers.Clear(); // clear all objects from previous search on next search
+                return;
+            }
+            
+            customers.Clear();
+            
+            var data = await new Database().ExecuteQueryWithResult($"SELECT * FROM customer WHERE FirstName = '{CfirstName}' OR LastName = '{ClastName}'");
         
-        customers.Clear();
-        
-        var data = await new Database().ExecuteQueryWithResult($"SELECT * FROM customer WHERE FirstName = '{CfirstName}' OR LastName = '{ClastName}'");
+            foreach (var customer in data)
+            {
+                customers.Add(new CustomerObj(
+                    Convert.ToInt32(customer["ID"]),
+                    customer["FIRSTNAME"]?.ToString() ?? throw new InvalidOperationException(),
+                    customer["LASTNAME"]?.ToString() ?? throw new InvalidOperationException(),
+                    customer["EMAIL"]?.ToString() ?? throw new InvalidOperationException(), // TODO replace with regex 
+                    customer["PHONENUMBER"]?.ToString(), // TODO check
+                    null // TODO implement later
+                ));
 
-        foreach (var customer in data)
+                if (customer["FIRSTNAME"]?.ToString() == CfirstName && customer["LASTNAME"]?.ToString() == ClastName) break; // stop iterating if an exact match is found
+            }
+        }
+        catch (InvalidInputException e)
         {
-            customers.Add(new CustomerObj(
-                Convert.ToInt32(customer["ID"]),
-                (string)customer["FIRSTNAME"],
-                (string)customer["LASTNAME"],
-                (string)customer["EMAIL"],
-                (string)customer["PHONENUMBER"],
-                null // TODO implement later
-            ));
-
-            if ((string)customer["FIRSTNAME"] == CfirstName && (string)customer["LASTNAME"] == ClastName) break; // stop iterating if an exact match is found
+            await JSRuntime.InvokeVoidAsync("alert", e.Message);
+        }
+        catch (Exception e)
+        {
+            await JSRuntime.InvokeVoidAsync("alert", e.Message);
         }
 
-        searchReturnedNone1 = customers.Count == 0;
+        SearchReturnedNone1 = customers.Count == 0;
         
         CfirstName = null; // reset text fields
         ClastName = null;
@@ -194,60 +206,84 @@
     
     private async Task SearchEquipment()
     {
-        if (string.IsNullOrWhiteSpace(ESerialNumber))
+        try
         {
-            searchReturnedNone2 = true;
-            if (equipment.Count != 0) equipment.Clear(); // clear all objects from previous search on next search
-            return;
-        }
+            if (string.IsNullOrWhiteSpace(ESerialNumber))
+            {
+                SearchReturnedNone2 = true;
+                if (equipment.Count != 0) equipment.Clear(); // clear all objects from previous search on next search
+                return;
+            }
+            
+            equipment.Clear();
+            
+            var data = await new Database().ExecuteQueryWithResult($"SELECT * FROM equipment WHERE SerialNumber = '{ESerialNumber}'");
         
-        equipment.Clear();
-        
-        var data = await new Database().ExecuteQueryWithResult($"SELECT * FROM equipment WHERE SerialNumber = '{ESerialNumber}'");
-        
-        foreach (var eq in data)
-        {
-            equipment.Add(new EquipmentObj(
-                (string)eq["SERIALNUMBER"],
-                (string)eq["PRODUCTNUMBER"],
-                (string)eq["DESCRIPTION"],
-                (string)eq["LOCATION"]
-            ));
+            foreach (var eq in data)
+             {
+                equipment.Add(new EquipmentObj(
+                    eq["SERIALNUMBER"]?.ToString() ?? throw new InvalidOperationException(),
+                    eq["PRODUCTNUMBER"]?.ToString() ?? throw new InvalidOperationException(),
+                    eq["DESCRIPTION"]?.ToString() ?? throw new InvalidOperationException(),
+                    eq["LOCATION"]?.ToString() ?? throw new InvalidOperationException()
+                ));
 
-            if ((string)eq["SERIALNUMBER"] == ESerialNumber) break; // stop iterating if an exact match is found
+                if (eq["SERIALNUMBER"]?.ToString() == ESerialNumber) break; // stop iterating if an exact match is found
+            }
+        }
+        catch (InvalidInputException e)
+        {
+            await JSRuntime.InvokeVoidAsync("alert", e.Message);
+        }
+        catch (Exception e)
+        {
+            await JSRuntime.InvokeVoidAsync("alert", e.Message);
         }
         
-        searchReturnedNone2 = equipment.Count == 0;
+        SearchReturnedNone2 = equipment.Count == 0;
 
         ESerialNumber = null; // reset text fields
     }
     
     private async Task SearchMemberships()
     {
-        if (MId == null) 
+        try
         {
-            searchReturnedNone3 = true;
-            if (memberships.Count != 0) memberships.Clear(); // clear all objects from previous search on next search
-            return;
-        }
-        
-        memberships.Clear();
-        
-        var data = await new Database().ExecuteQueryWithResult($"SELECT * FROM memberships WHERE Id = {MId}");
-        
-        foreach (var membership in data)
-        {
-            memberships.Add(new MembershipObj(
-                (string)membership["NAME"],
-                (string)membership["TYPE"],
-                (int)membership["ID"],
-                (double)membership["PRICE"]
-            ));
+            if(!Int32.TryParse(MId, out _)) throw new InvalidInputException("Please enter a valid number greater than 0");
+            
+            if (MId == null) 
+            {
+                SearchReturnedNone3 = true;
+                if (memberships.Count != 0) memberships.Clear(); // clear all objects from previous search on next search
+                return;
+            }
+            
+            memberships.Clear();
+            
+            var data = await new Database().ExecuteQueryWithResult($"SELECT * FROM memberships WHERE Id = {Convert.ToInt32(MId)}");
+            
+            foreach (var membership in data)
+            {
+                memberships.Add(new MembershipObj(
+                    membership["NAME"]?.ToString() ?? throw new InvalidOperationException(),
+                    membership["TYPE"]?.ToString() ?? throw new InvalidOperationException(),
+                    Convert.ToInt32(membership["ID"]),
+                    Convert.ToDouble(membership["PRICE"])
+                ));
 
-            if ((int)membership["ID"] == MId) break; // stop iterating if an exact match is found
+                if (Convert.ToInt32(membership["ID"]) == Convert.ToInt32(MId)) break; // stop iterating if an exact match is found
+            }
+        }
+        catch (InvalidInputException e)
+        {
+            await JSRuntime.InvokeVoidAsync("alert", e.Message);
+        }
+        catch (Exception e)
+        {
+            await JSRuntime.InvokeVoidAsync("alert", e.Message);
         }
         
-        searchReturnedNone3 = memberships.Count == 0;
+        SearchReturnedNone3 = memberships.Count == 0;
 
         MId = null; // reset text fields
     }
