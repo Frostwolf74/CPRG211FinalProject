@@ -9,11 +9,11 @@
         </div>
 
         <div style="display: flex; flex: 1; overflow: hidden;">
-            <div class="sidebar">
-                <NavMenu />
+            <div class="sidebar" style="min-height: 100vh;">
+                <NavMenu/>
             </div>
             
-            <article class="content px-4 d-flex justify-content-center" style="height: 100vh; width: 75vw;">
+            <article class="content px-4 d-flex justify-content-center" style="min-height: 100vh; width: 75vw;">
                 @Body
             </article>
         </div>
@@ -24,10 +24,5 @@
     protected override void OnInitialized()
     {
         HeaderService.OnChange += StateHasChanged;
-    }
-
-    public void Dispose()
-    {
-        HeaderService.OnChange -= StateHasChanged;
     }
 }

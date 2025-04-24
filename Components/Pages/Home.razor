@@ -1,4 +1,5 @@
 ﻿@page "/"
+@using System.Text.RegularExpressions
 @using CPRG211FinalProject.Components.Utils
 @inject IJSRuntime JSRuntime
 
@@ -159,7 +160,7 @@
     private string? MId { get; set; } 
     private List<MembershipObj> memberships = new();
     private bool SearchReturnedNone3 { get; set; }
-
+    
     private async Task SearchCustomers()
     {
         try
@@ -169,6 +170,12 @@
                 SearchReturnedNone1 = true;
                 if (customers.Count != 0) customers.Clear(); // clear all objects from previous search on next search
                 return;
+            }
+
+            if (!string.IsNullOrEmpty(CfirstName) && !CfirstName.All(c => new Regex("[a-zA-Z0-9_]").IsMatch(c.ToString())) || // prevent invalid characters that will cause the SELECT to fail entirely
+                !string.IsNullOrEmpty(ClastName) && !ClastName.All(c => new Regex("[a-zA-Z0-9_]").IsMatch(c.ToString())))
+            {
+                throw new InvalidInputException("Please enter valid letters and/or numbers");
             }
             
             customers.Clear();
@@ -181,8 +188,8 @@
                     Convert.ToInt32(customer["ID"]),
                     customer["FIRSTNAME"]?.ToString() ?? throw new InvalidOperationException(),
                     customer["LASTNAME"]?.ToString() ?? throw new InvalidOperationException(),
-                    customer["EMAIL"]?.ToString() ?? throw new InvalidOperationException(), // TODO replace with regex 
-                    customer["PHONENUMBER"]?.ToString(), // TODO check
+                    customer["EMAIL"]?.ToString() ?? throw new InvalidOperationException(),
+                    customer["PHONENUMBER"]?.ToString(),
                     null // TODO implement later
                 ));
 
@@ -213,6 +220,11 @@
                 SearchReturnedNone2 = true;
                 if (equipment.Count != 0) equipment.Clear(); // clear all objects from previous search on next search
                 return;
+            }
+            
+            if (!string.IsNullOrEmpty(ESerialNumber) && !ESerialNumber.All(c => new Regex("[A-Z0-9]").IsMatch(c.ToString())))  // prevent invalid characters that will cause the SELECT to fail entirely
+            {
+                throw new InvalidInputException("Please enter a valid alphanumeric string in SNXXX format where X is a number greater than 0");
             }
             
             equipment.Clear();
