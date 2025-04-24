@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using CPRG211FinalProject.Components.Helpers;
+using Microsoft.Extensions.Logging;
 
 namespace CPRG211FinalProject;
 
@@ -12,6 +13,7 @@ public static class MauiProgram
             .ConfigureFonts(fonts => { fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular"); });
 
         builder.Services.AddMauiBlazorWebView();
+        builder.Services.AddScoped<HeaderService>();
 
 #if DEBUG
         builder.Services.AddBlazorWebViewDeveloperTools();

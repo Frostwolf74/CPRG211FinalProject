@@ -1,9 +1,11 @@
-﻿@inherits LayoutComponentBase
+﻿@using CPRG211FinalProject.Components.Helpers
+@inherits LayoutComponentBase
+@inject HeaderService HeaderService 
 
 <div class="page">
     <main>
         <div class="top-row ps-3" style="background-color: #d9d9d9; justify-content: center; filter: drop-shadow(0 0 0.75rem #515151);">
-            <h3>Page @* @HeaderService.HeaderText *@</h3>
+            <h3>@HeaderService.HeaderText</h3>
         </div>
 
         <div style="display: flex; flex: 1; overflow: hidden;">
@@ -17,3 +19,15 @@
         </div>
     </main>
 </div>
+
+@code {
+    protected override void OnInitialized()
+    {
+        HeaderService.OnChange += StateHasChanged;
+    }
+
+    public void Dispose()
+    {
+        HeaderService.OnChange -= StateHasChanged;
+    }
+}
