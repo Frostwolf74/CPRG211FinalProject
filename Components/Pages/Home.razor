@@ -1,4 +1,5 @@
 ﻿@page "/"
+@using CPRG211FinalProject.Components.Utils
 
 <div style="text-align: center">
     <div>
@@ -15,24 +16,81 @@
         <button @onclick="SearchCustomers" class="bg-success" style="border-radius: 10px; border: 0; min-width: 90px;">Search</button>
     </div>
 
-    @foreach (customer in customers)
+    <br/>
+    
+    @if (customers.Count != 0)
     {
-        
+        <div>
+            <h3>Customer(s) found:</h3>
+        </div>
     }
-
+    
+    @foreach (var customer in customers)
+    {
+        <div class="rounded px-3 py-2 mb-2" style="background-color: #d9d9d9; min-width: 500px">
+            <div class="w-100" style="min-width: fit-content;">
+                <div class="row">
+                    <div class="col-6">
+                        <div>@customer.FirstName</div>
+                        <div>@customer.LastName</div>
+                    </div>
+                    <div class="col-6">
+                        <div>@customer.Email</div>
+                        <div>@customer.PhoneNumber</div>
+                    </div>
+                    <div class="col-6">
+                        <div>@customer.Memberships</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    
+    @if (searchReturnedNone)
+    {
+        <p style="color: #2c3034;">No results found</p>
+    }
 </div>
 
-@code{
+@code {
     private string firstName { get; set; }
     private string lastName { get; set; }
-    private List<Customer> customers = new();
-    private Task<List<Dictionary<string, object>>> data { set; get; }
+    private List<CustomerObj> customers = new();
+    private bool searchReturnedNone { get; set; }
 
-    private void SearchCustomers()
+    private async Task SearchCustomers()
     {
-        data = new Database().ExecuteQueryWithResult($"SELECT FirstName, lastName FROM customer WHERE FirstName = '{firstName}' AND LastName = '{lastName}'");
+        if (string.IsNullOrWhiteSpace(firstName) && string.IsNullOrWhiteSpace(lastName))
+        {
+            searchReturnedNone = true;
+
+            if (customers.Count != 0) customers.Clear();
+            
+            return;
+        }
         
+        searchReturnedNone = false;
+        customers.Clear();
         
+        var data = await new Database().ExecuteQueryWithResult($"SELECT * FROM customer WHERE FirstName = '{firstName}' OR LastName = '{lastName}'");
+        
+        foreach (var customer in data)
+        {
+            customers.Add(new CustomerObj(
+                (string)customer["FIRSTNAME"],
+                (string)customer["LASTNAME"],
+                (string)customer["EMAIL"],
+                (string)customer["PHONENUMBER"],
+                null // TODO implement later
+            ));
+            
+            if ((string)customer["FIRSTNAME"] == firstName && (string)customer["LASTNAME"] == lastName) // stop iterating if an exact match is found
+            {
+                break;
+            }
+        }
+
+        firstName = null;
+        lastName = null;
     }
 }
-

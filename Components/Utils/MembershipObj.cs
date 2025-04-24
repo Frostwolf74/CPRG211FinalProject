@@ -2,10 +2,10 @@
 
 public class MembershipObj(string name, string type, int id, int price)
 {
-    private string Name { get; set; } = name;
-    private string Type { get; set; } = type;
-    private int Id { get; set; } = id;
-    private int Price { get; set; } = price;
+    public string Name { get; set; } = name;
+    public string Type { get; set; } = type;
+    public int Id { get; set; } = id;
+    public int Price { get; set; } = price;
 
     public override string ToString()
     {

@@ -80,9 +80,9 @@ public class Database
     }
 
 
-    public async Task<List<Dictionary<string, object>>> ExecuteQueryWithResult(string query)
+    public async Task<List<Dictionary<string, object?>>> ExecuteQueryWithResult(string query)
     {
-        var results = new List<Dictionary<string, object>>();
+        var results = new List<Dictionary<string, object?>>();
 
         using var connection = OpenConnection();
         using var command = new MySqlCommand(query, connection);
@@ -90,7 +90,7 @@ public class Database
 
         while (await reader.ReadAsync())
         {
-            var row = new Dictionary<string, object>();
+            var row = new Dictionary<string, object?>();
 
             for (int i = 0; i < reader.FieldCount; i++)
             {
