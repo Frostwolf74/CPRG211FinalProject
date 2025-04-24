@@ -1,5 +1,6 @@
 ﻿@page "/customer"
 @using CPRG211FinalProject.Components.Utils
+@inject IJSRuntime JS
 
 <div style="text-align: center">
     <div>
@@ -68,7 +69,7 @@
             <input @bind="newCustomerEmail" placeholder="Email" style="width: 100%; border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px;" />
         </div>
         <div>
-            <input @bind="newCustomerPhoneNumber" placeholder="Phone Number" style="width: 100%; border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px;" />
+            <input @bind="newCustomerPhoneNumber" placeholder="Phone Number (xxx-xxx-xxxx)" style="width: 100%; border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px;" />
         </div>
         <button @onclick="SaveCustomer" class="bg-success" style="width: 100%; border: 0; border-radius: 5px; border: 0; margin-bottom: 10px;">Save</button>
         @if (isEditingCustomer)
@@ -78,7 +79,6 @@
         <button @onclick="ToggleAddCustomerMenu" class="bg-success" style="width: 100%; border: 0; border-radius: 5px; border: 0;">Cancel</button>
     </div>
 }
-
 
 @code {
     private string firstName { get; set; }
@@ -181,6 +181,30 @@
 
     private async Task SaveCustomer()
     {
+        if (string.IsNullOrWhiteSpace(newCustomerFirstName))
+        {
+            await DisplayAlert("Alert", "First name cannot be empty.", "Try Again");
+            return;
+        }
+
+        if (string.IsNullOrWhiteSpace(newCustomerLastName))
+        {
+            await DisplayAlert("Alert", "Last name cannot be empty.", "Try Again");
+            return;
+        }
+
+        if (!string.IsNullOrWhiteSpace(newCustomerPhoneNumber) && !IsValidPhoneNumber(newCustomerPhoneNumber))
+        {
+            await DisplayAlert("Alert", "Phone number must be in the format xxx-xxx-xxxx.", "Try Again");
+            return;
+        }
+
+        if (!string.IsNullOrWhiteSpace(newCustomerEmail) && !IsValidEmail(newCustomerEmail))
+        {
+            await DisplayAlert("Alert", "Please enter a valid email address.", "Try Again");
+            return;
+        }
+
         if (isEditingCustomer && selectedCustomer != null)
         {
             selectedCustomer.FirstName = newCustomerFirstName;
@@ -223,5 +247,20 @@
             await LoadAllCustomers();
             ToggleAddCustomerMenu();
         }
+    }
+
+    private bool IsValidPhoneNumber(string phoneNumber)
+    {
+        return System.Text.RegularExpressions.Regex.IsMatch(phoneNumber, @"^\d{3}-\d{3}-\d{4}$");
+    }
+
+    private bool IsValidEmail(string email)
+    {
+        return System.Text.RegularExpressions.Regex.IsMatch(email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$");
+    }
+
+    private async Task DisplayAlert(string title, string message, string button)
+    {
+        await JS.InvokeVoidAsync("displayAlert", title, message, button);
     }
 }
