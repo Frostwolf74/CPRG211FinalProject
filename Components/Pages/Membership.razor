@@ -1,6 +1,273 @@
-﻿@page "/Membership"
-<h3>Membership</h3>
+﻿@page "/membership"
+@using CPRG211FinalProject.Components.Utils
+@inject IJSRuntime JS
+
+<div style="text-align: center">
+    <div>
+        <h2>Locate memberships in database</h2>
+    </div>
+    <div>
+        <input @bind="name" placeholder="Name" style="border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px; padding-left: 10px;" />
+    </div>
+    <div>
+        <input @bind="type" placeholder="Type" style="border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px; padding-left: 10px;" />
+    </div>
+    <div>
+        <input @bind="idInput" placeholder="ID (exact)" style="border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px; padding-left: 10px;" />
+    </div>
+    <div>
+        <input @bind="priceInput" placeholder="Price (exact)" style="border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px; padding-left: 10px;" />
+    </div>
+
+    <div class="justify-content-center">
+        <button @onclick="SearchMemberships" class="bg-success" style="border-radius: 10px; border: 0; min-width: 90px;">Search</button>
+        <button @onclick="RefreshMemberships" class="bg-success" style="border-radius: 10px; border: 0; min-width: 90px;">Refresh</button>
+        <button @onclick="ToggleAddMembershipMenu" class="bg-success" style="border-radius: 10px; border: 0; min-width: 90px;">Add Membership</button>
+    </div>
+
+    <br />
+
+    @if (memberships.Count != 0)
+    {
+        <div>
+            <h3>Membership(s) found:</h3>
+        </div>
+    }
+
+    @foreach (var membership in memberships)
+    {
+        <div class="rounded px-3 py-2 mb-2" style="background-color: #d9d9d9; min-width: 500px; cursor: pointer;" @onclick="() => OpenEditMembershipMenu(membership)">
+            <div class="w-100" style="min-width: fit-content;">
+                <div class="row">
+                    <div class="col-6">
+                        <div>Name: @membership.Name</div>
+                        <div>Type: @membership.Type</div>
+                    </div>
+                    <div class="col-6">
+                        <div>ID: @membership.Id</div>
+                        <div>Price: @membership.Price</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+    @if (searchReturnedNone)
+    {
+        <p style="color: #2c3034;">No results found</p>
+    }
+</div>
+
+@if (showAddMembershipMenu)
+{
+    <div style="position: fixed; top: 0; right: 0; width: 300px; height: 100%; background-color: #f8f9fa; box-shadow: -2px 0 5px rgba(0,0,0,0.1); padding: 20px;">
+        <h3>@(isEditingMembership ? "Edit Membership" : "Add Membership")</h3>
+        <div>
+            <input @bind="newName" placeholder="Name" style="width: 100%; border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px;" />
+        </div>
+        <div>
+            <input @bind="newType" placeholder="Type" style="width: 100%; border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px;" />
+        </div>
+        <div>
+            <input @bind="newPriceInput" placeholder="Price" style="width: 100%; border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px;" />
+        </div>
+        <button @onclick="SaveMembership" class="bg-success" style="width: 100%; border: 0; border-radius: 5px; margin-bottom: 10px;">Save</button>
+        @if (isEditingMembership)
+        {
+            <button @onclick="DeleteMembership" class="bg-danger" style="width: 100%; border: 0; border-radius: 5px; margin-bottom: 10px;">Delete</button>
+        }
+        <button @onclick="ToggleAddMembershipMenu" class="bg-success" style="width: 100%; border: 0; border-radius: 5px;">Cancel</button>
+    </div>
+}
 
 @code {
-    
+    private string name { get; set; }
+    private string type { get; set; }
+    private string idInput { get; set; }
+    private string priceInput { get; set; }
+
+    private List<MembershipObj> memberships = new();
+    private bool searchReturnedNone { get; set; }
+    private bool showAddMembershipMenu { get; set; } = false;
+    private bool isEditingMembership { get; set; } = false;
+    private MembershipObj? selectedMembership { get; set; }
+    private string newName { get; set; }
+    private string newType { get; set; }
+    private string newPriceInput { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadAllMemberships();
+    }
+
+    private async Task LoadAllMemberships()
+    {
+        memberships.Clear();
+        var data = await new Database().ExecuteQueryWithResult("SELECT * FROM Memberships");
+
+        foreach (var membership in data)
+        {
+            memberships.Add(new MembershipObj(
+                (string)membership["NAME"],
+                (string)membership["TYPE"],
+                Convert.ToInt32(membership["ID"]),
+                Convert.ToDouble(membership["PRICE"])
+            ));
+        }
+    }
+
+    private async Task SearchMemberships()
+    {
+        try
+        {
+            if (string.IsNullOrWhiteSpace(name) &&
+                string.IsNullOrWhiteSpace(type) &&
+                string.IsNullOrWhiteSpace(idInput) &&
+                string.IsNullOrWhiteSpace(priceInput))
+            {
+                throw new InvalidInputException("Please enter at least one field to search.");
+            }
+
+            searchReturnedNone = false;
+            memberships.Clear();
+
+            var conditions = new List<string>();
+
+            if (!string.IsNullOrWhiteSpace(name))
+                conditions.Add($"Name LIKE '%{name}%'");
+
+            if (!string.IsNullOrWhiteSpace(type))
+                conditions.Add($"Type LIKE '%{type}%'");
+
+            if (!string.IsNullOrWhiteSpace(idInput) && int.TryParse(idInput, out int parsedId))
+                conditions.Add($"Id = {parsedId}");
+
+            if (!string.IsNullOrWhiteSpace(priceInput) && double.TryParse(priceInput, out double parsedPrice))
+                conditions.Add($"Price = {parsedPrice}");
+
+            string whereClause = string.Join(" AND ", conditions);
+
+            var data = await new Database().ExecuteQueryWithResult($"SELECT * FROM Memberships WHERE {whereClause}");
+
+            foreach (var membership in data)
+            {
+                memberships.Add(new MembershipObj(
+                    (string)membership["NAME"],
+                    (string)membership["TYPE"],
+                    Convert.ToInt32(membership["ID"]),
+                    Convert.ToDouble(membership["PRICE"])
+                ));
+            }
+
+            searchReturnedNone = memberships.Count == 0;
+        }
+        catch (InvalidInputException ex)
+        {
+            await DisplayAlert("Invalid Input", ex.Message, "Try Again");
+            searchReturnedNone = true;
+            memberships.Clear();
+        }
+        finally
+        {
+            name = null;
+            type = null;
+            idInput = null;
+            priceInput = null;
+        }
+    }
+
+    private async Task RefreshMemberships()
+    {
+        name = string.Empty;
+        type = string.Empty;
+        idInput = string.Empty;
+        priceInput = string.Empty;
+        searchReturnedNone = false;
+        await LoadAllMemberships();
+    }
+
+    private void ToggleAddMembershipMenu()
+    {
+        showAddMembershipMenu = !showAddMembershipMenu;
+        if (!showAddMembershipMenu)
+        {
+            ResetMembershipForm();
+        }
+    }
+
+    private void OpenEditMembershipMenu(MembershipObj membership)
+    {
+        selectedMembership = membership;
+        newName = membership.Name;
+        newType = membership.Type;
+        newPriceInput = membership.Price.ToString();
+        isEditingMembership = true;
+        showAddMembershipMenu = true;
+    }
+
+    private async Task SaveMembership()
+    {
+        try
+        {
+            if (string.IsNullOrWhiteSpace(newName))
+                throw new InvalidInputException("Name cannot be empty.");
+
+            if (string.IsNullOrWhiteSpace(newType))
+                throw new InvalidInputException("Type cannot be empty.");
+
+            if (!double.TryParse(newPriceInput, out double parsedPrice))
+                throw new InvalidInputException("Please enter a valid price.");
+
+            if (isEditingMembership && selectedMembership != null)
+            {
+                new Database().UpdateMembership(
+                    selectedMembership.Id,
+                    newName,
+                    newType,
+                    parsedPrice
+                );
+            }
+            else
+            {
+                int newId = new Random().Next(10000, 99999); // Random ID
+                new Database().AddMembership(
+                    newId,
+                    newName,
+                    newType,
+                    parsedPrice
+                );
+            }
+
+            await LoadAllMemberships();
+            ToggleAddMembershipMenu();
+        }
+        catch (InvalidInputException ex)
+        {
+            await DisplayAlert("Invalid Input", ex.Message, "Try Again");
+        }
+    }
+
+    private async Task DeleteMembership()
+    {
+        if (selectedMembership != null)
+        {
+            new Database().RemoveMembership(selectedMembership.Id);
+            await LoadAllMemberships();
+            ToggleAddMembershipMenu();
+        }
+    }
+
+    private void ResetMembershipForm()
+    {
+        newName = string.Empty;
+        newType = string.Empty;
+        newPriceInput = string.Empty;
+        isEditingMembership = false;
+        selectedMembership = null;
+    }
+
+    private async Task DisplayAlert(string title, string message, string button)
+    {
+        await JS.InvokeVoidAsync("displayAlert", title, message, button);
+    }
 }

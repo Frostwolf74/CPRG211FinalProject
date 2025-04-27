@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hb6/GjCl3tdSleIfzo34G0/hxlq3MCE/KdxGk/MI16Y=",
+  "Hash": "A+y33IAdmNjgdQeRY2ujO2gkBtYBgKRfg8k3SCjEBkU=",
   "Source": "CPRG211FinalProject",
   "BasePath": "/",
   "Mode": "Root",
@@ -10,17 +10,17 @@
     {
       "Name": "CPRG211FinalProject\\wwwroot",
       "Source": "CPRG211FinalProject",
-      "ContentRoot": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\",
       "BasePath": "/",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\1t0ms7y7r2-uqf925phnj.gz",
+      "Identity": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\1t0ms7y7r2-uqf925phnj.gz",
       "SourceId": "CPRG211FinalProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\",
+      "ContentRoot": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\",
       "BasePath": "/",
       "RelativePath": "index#[.{fingerprint=uqf925phnj}]?.html.gz",
       "AssetKind": "All",
@@ -28,20 +28,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\index.html",
+      "RelatedAsset": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\index.html",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "kt7wpsby0j",
-      "Integrity": "aDdIbyb0qQS3P4s019zwxY5MtQDmOtKIQT/EIBWUzn8=",
+      "Fingerprint": "809srege4d",
+      "Integrity": "aHDipx4PoI2L7VqM5bmVx6BP85myM79rgaDnquLHJY8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\index.html"
+      "OriginalItemSpec": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\8ly2dwv5sb-kgtp8xtmkx.gz",
+      "Identity": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\8ly2dwv5sb-kgtp8xtmkx.gz",
       "SourceId": "CPRG211FinalProject",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\",
+      "ContentRoot": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\",
       "BasePath": "/",
       "RelativePath": "CPRG211FinalProject#[.{fingerprint=kgtp8xtmkx}]!.bundle.scp.css.gz",
       "AssetKind": "All",
@@ -49,20 +49,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\CPRG211FinalProject.bundle.scp.css",
+      "RelatedAsset": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\CPRG211FinalProject.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "acufs96dle",
-      "Integrity": "prjWcf2uSfifbddKTUeYxIbxVu/WylqF0wUThniJCvk=",
+      "Fingerprint": "rtu6ipn5rr",
+      "Integrity": "j+d0Vi2dMXthII1BMBfREjruNIkbjE8w75NI9P5WsPM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\CPRG211FinalProject.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\CPRG211FinalProject.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\fenloq0du8-kgtp8xtmkx.gz",
+      "Identity": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\fenloq0du8-kgtp8xtmkx.gz",
       "SourceId": "CPRG211FinalProject",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\",
+      "ContentRoot": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\",
       "BasePath": "/",
       "RelativePath": "CPRG211FinalProject#[.{fingerprint=kgtp8xtmkx}]?.styles.css.gz",
       "AssetKind": "All",
@@ -70,20 +70,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\CPRG211FinalProject.styles.css",
+      "RelatedAsset": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\CPRG211FinalProject.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "acufs96dle",
-      "Integrity": "prjWcf2uSfifbddKTUeYxIbxVu/WylqF0wUThniJCvk=",
+      "Fingerprint": "rtu6ipn5rr",
+      "Integrity": "j+d0Vi2dMXthII1BMBfREjruNIkbjE8w75NI9P5WsPM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\CPRG211FinalProject.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\CPRG211FinalProject.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\lvftehb1nf-8inm30yfxf.gz",
+      "Identity": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\lvftehb1nf-8inm30yfxf.gz",
       "SourceId": "CPRG211FinalProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\",
+      "ContentRoot": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\",
       "BasePath": "/",
       "RelativePath": "css/bootstrap/bootstrap.min.css#[.{fingerprint=8inm30yfxf}]?.map.gz",
       "AssetKind": "All",
@@ -91,20 +91,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "RelatedAsset": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "m532s4naxw",
-      "Integrity": "epiz+IkftKdCVrNwM3M3b4/Co3mxoqDpjOfMrHfv/7E=",
+      "Fingerprint": "fbl5ivwo6k",
+      "Integrity": "Kym5HpgDYV8Caci50HDUPG6WCQ6nTP+8hy429w+zHVU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\ob328u0gp5-6gzpyzhau4.gz",
+      "Identity": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\ob328u0gp5-6gzpyzhau4.gz",
       "SourceId": "CPRG211FinalProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\",
+      "ContentRoot": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\",
       "BasePath": "/",
       "RelativePath": "css/bootstrap/bootstrap.min#[.{fingerprint=6gzpyzhau4}]?.css.gz",
       "AssetKind": "All",
@@ -112,20 +112,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "RelatedAsset": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "7l51xal3e9",
-      "Integrity": "dfRdV3FWJNHUyN/ZTK8eRHslFtdOjQxpi1BEcWXtMR8=",
+      "Fingerprint": "joqzyw7ssu",
+      "Integrity": "LTxu1aeZz5yJTTAB+DiLnn5XOMdK1oiypNP/4JaeK9c=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css"
+      "OriginalItemSpec": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\psoxkqmpgq-e5tk7yf482.gz",
+      "Identity": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\psoxkqmpgq-e5tk7yf482.gz",
       "SourceId": "CPRG211FinalProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\",
+      "ContentRoot": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\",
       "BasePath": "/",
       "RelativePath": "css/app#[.{fingerprint=e5tk7yf482}]?.css.gz",
       "AssetKind": "All",
@@ -133,20 +133,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\app.css",
+      "RelatedAsset": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\css\\app.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "qfor6zdeny",
-      "Integrity": "ismDfJHkNHfoqxdRjvM7D0cvQOeIn31cbNUC6dB4m9A=",
+      "Fingerprint": "9sb0w9jnhl",
+      "Integrity": "qQ+vo7zHfjEIsR7Ks2Vsx0CJAT5ngXzV3IUcVLWwEfw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\app.css"
+      "OriginalItemSpec": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\css\\app.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\CPRG211FinalProject.styles.css",
+      "Identity": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\CPRG211FinalProject.styles.css",
       "SourceId": "CPRG211FinalProject",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\",
       "BasePath": "/",
       "RelativePath": "CPRG211FinalProject#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -161,13 +161,13 @@
       "Integrity": "ZN00JIqJsXwTW8tJRnIft9vXp6WCnX3CsTSKKSwd9Dc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\CPRG211FinalProject.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\CPRG211FinalProject.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\CPRG211FinalProject.bundle.scp.css",
+      "Identity": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\CPRG211FinalProject.bundle.scp.css",
       "SourceId": "CPRG211FinalProject",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\",
       "BasePath": "/",
       "RelativePath": "CPRG211FinalProject#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -182,13 +182,13 @@
       "Integrity": "ZN00JIqJsXwTW8tJRnIft9vXp6WCnX3CsTSKKSwd9Dc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\CPRG211FinalProject.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\CPRG211FinalProject.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\app.css",
+      "Identity": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\css\\app.css",
       "SourceId": "CPRG211FinalProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/app#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -206,10 +206,10 @@
       "OriginalItemSpec": "wwwroot\\css\\app.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "CPRG211FinalProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/bootstrap/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -227,10 +227,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "CPRG211FinalProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/bootstrap/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -248,10 +248,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\index.html",
       "SourceId": "CPRG211FinalProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "index#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -272,12 +272,12 @@
   "Endpoints": [
     {
       "Route": "CPRG211FinalProject.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\8ly2dwv5sb-kgtp8xtmkx.gz",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\8ly2dwv5sb-kgtp8xtmkx.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000613873542"
+          "Quality": "0.000615006150"
         }
       ],
       "ResponseHeaders": [
@@ -287,15 +287,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1628"
+          "Value": "1625"
         },
         {
           "Name": "ETag",
-          "Value": "\"prjWcf2uSfifbddKTUeYxIbxVu/WylqF0wUThniJCvk=\""
+          "Value": "\"j+d0Vi2dMXthII1BMBfREjruNIkbjE8w75NI9P5WsPM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 03:07:57 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -327,7 +327,7 @@
     },
     {
       "Route": "CPRG211FinalProject.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\CPRG211FinalProject.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\CPRG211FinalProject.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -348,7 +348,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 03:07:57 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -364,7 +364,7 @@
     },
     {
       "Route": "CPRG211FinalProject.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\8ly2dwv5sb-kgtp8xtmkx.gz",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\8ly2dwv5sb-kgtp8xtmkx.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -373,7 +373,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1628"
+          "Value": "1625"
         },
         {
           "Name": "Content-Type",
@@ -381,11 +381,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"prjWcf2uSfifbddKTUeYxIbxVu/WylqF0wUThniJCvk=\""
+          "Value": "\"j+d0Vi2dMXthII1BMBfREjruNIkbjE8w75NI9P5WsPM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 03:07:57 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -403,18 +403,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-prjWcf2uSfifbddKTUeYxIbxVu/WylqF0wUThniJCvk="
+          "Value": "sha256-j+d0Vi2dMXthII1BMBfREjruNIkbjE8w75NI9P5WsPM="
         }
       ]
     },
     {
       "Route": "CPRG211FinalProject.kgtp8xtmkx.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\8ly2dwv5sb-kgtp8xtmkx.gz",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\8ly2dwv5sb-kgtp8xtmkx.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000613873542"
+          "Quality": "0.000615006150"
         }
       ],
       "ResponseHeaders": [
@@ -424,15 +424,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1628"
+          "Value": "1625"
         },
         {
           "Name": "ETag",
-          "Value": "\"prjWcf2uSfifbddKTUeYxIbxVu/WylqF0wUThniJCvk=\""
+          "Value": "\"j+d0Vi2dMXthII1BMBfREjruNIkbjE8w75NI9P5WsPM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 03:07:57 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -472,7 +472,7 @@
     },
     {
       "Route": "CPRG211FinalProject.kgtp8xtmkx.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\CPRG211FinalProject.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\scopedcss\\projectbundle\\CPRG211FinalProject.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -493,7 +493,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 03:07:57 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -517,7 +517,7 @@
     },
     {
       "Route": "CPRG211FinalProject.kgtp8xtmkx.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\8ly2dwv5sb-kgtp8xtmkx.gz",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\8ly2dwv5sb-kgtp8xtmkx.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -526,7 +526,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1628"
+          "Value": "1625"
         },
         {
           "Name": "Content-Type",
@@ -534,11 +534,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"prjWcf2uSfifbddKTUeYxIbxVu/WylqF0wUThniJCvk=\""
+          "Value": "\"j+d0Vi2dMXthII1BMBfREjruNIkbjE8w75NI9P5WsPM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 03:07:57 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -564,18 +564,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-prjWcf2uSfifbddKTUeYxIbxVu/WylqF0wUThniJCvk="
+          "Value": "sha256-j+d0Vi2dMXthII1BMBfREjruNIkbjE8w75NI9P5WsPM="
         }
       ]
     },
     {
       "Route": "CPRG211FinalProject.kgtp8xtmkx.styles.css",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\fenloq0du8-kgtp8xtmkx.gz",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\fenloq0du8-kgtp8xtmkx.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000613873542"
+          "Quality": "0.000615006150"
         }
       ],
       "ResponseHeaders": [
@@ -585,15 +585,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1628"
+          "Value": "1625"
         },
         {
           "Name": "ETag",
-          "Value": "\"prjWcf2uSfifbddKTUeYxIbxVu/WylqF0wUThniJCvk=\""
+          "Value": "\"j+d0Vi2dMXthII1BMBfREjruNIkbjE8w75NI9P5WsPM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 03:07:57 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -633,7 +633,7 @@
     },
     {
       "Route": "CPRG211FinalProject.kgtp8xtmkx.styles.css",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\CPRG211FinalProject.styles.css",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\CPRG211FinalProject.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -654,7 +654,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 03:07:57 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -678,7 +678,7 @@
     },
     {
       "Route": "CPRG211FinalProject.kgtp8xtmkx.styles.css.gz",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\fenloq0du8-kgtp8xtmkx.gz",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\fenloq0du8-kgtp8xtmkx.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -687,7 +687,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1628"
+          "Value": "1625"
         },
         {
           "Name": "Content-Type",
@@ -695,11 +695,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"prjWcf2uSfifbddKTUeYxIbxVu/WylqF0wUThniJCvk=\""
+          "Value": "\"j+d0Vi2dMXthII1BMBfREjruNIkbjE8w75NI9P5WsPM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 03:07:57 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -725,18 +725,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-prjWcf2uSfifbddKTUeYxIbxVu/WylqF0wUThniJCvk="
+          "Value": "sha256-j+d0Vi2dMXthII1BMBfREjruNIkbjE8w75NI9P5WsPM="
         }
       ]
     },
     {
       "Route": "CPRG211FinalProject.styles.css",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\fenloq0du8-kgtp8xtmkx.gz",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\fenloq0du8-kgtp8xtmkx.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000613873542"
+          "Quality": "0.000615006150"
         }
       ],
       "ResponseHeaders": [
@@ -746,15 +746,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1628"
+          "Value": "1625"
         },
         {
           "Name": "ETag",
-          "Value": "\"prjWcf2uSfifbddKTUeYxIbxVu/WylqF0wUThniJCvk=\""
+          "Value": "\"j+d0Vi2dMXthII1BMBfREjruNIkbjE8w75NI9P5WsPM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 03:07:57 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -786,7 +786,7 @@
     },
     {
       "Route": "CPRG211FinalProject.styles.css",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\CPRG211FinalProject.styles.css",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\CPRG211FinalProject.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -807,7 +807,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 03:07:57 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -823,7 +823,7 @@
     },
     {
       "Route": "CPRG211FinalProject.styles.css.gz",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\fenloq0du8-kgtp8xtmkx.gz",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\fenloq0du8-kgtp8xtmkx.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -832,7 +832,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1628"
+          "Value": "1625"
         },
         {
           "Name": "Content-Type",
@@ -840,11 +840,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"prjWcf2uSfifbddKTUeYxIbxVu/WylqF0wUThniJCvk=\""
+          "Value": "\"j+d0Vi2dMXthII1BMBfREjruNIkbjE8w75NI9P5WsPM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 03:07:57 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -862,18 +862,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-prjWcf2uSfifbddKTUeYxIbxVu/WylqF0wUThniJCvk="
+          "Value": "sha256-j+d0Vi2dMXthII1BMBfREjruNIkbjE8w75NI9P5WsPM="
         }
       ]
     },
     {
       "Route": "css/app.css",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\psoxkqmpgq-e5tk7yf482.gz",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\psoxkqmpgq-e5tk7yf482.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000556173526"
+          "Quality": "0.000571102227"
         }
       ],
       "ResponseHeaders": [
@@ -883,15 +883,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1797"
+          "Value": "1750"
         },
         {
           "Name": "ETag",
-          "Value": "\"ismDfJHkNHfoqxdRjvM7D0cvQOeIn31cbNUC6dB4m9A=\""
+          "Value": "\"qQ+vo7zHfjEIsR7Ks2Vsx0CJAT5ngXzV3IUcVLWwEfw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -923,7 +923,7 @@
     },
     {
       "Route": "css/app.css",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\app.css",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\css\\app.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -944,7 +944,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -960,7 +960,7 @@
     },
     {
       "Route": "css/app.css.gz",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\psoxkqmpgq-e5tk7yf482.gz",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\psoxkqmpgq-e5tk7yf482.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -969,7 +969,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1797"
+          "Value": "1750"
         },
         {
           "Name": "Content-Type",
@@ -977,11 +977,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ismDfJHkNHfoqxdRjvM7D0cvQOeIn31cbNUC6dB4m9A=\""
+          "Value": "\"qQ+vo7zHfjEIsR7Ks2Vsx0CJAT5ngXzV3IUcVLWwEfw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -999,18 +999,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ismDfJHkNHfoqxdRjvM7D0cvQOeIn31cbNUC6dB4m9A="
+          "Value": "sha256-qQ+vo7zHfjEIsR7Ks2Vsx0CJAT5ngXzV3IUcVLWwEfw="
         }
       ]
     },
     {
       "Route": "css/app.e5tk7yf482.css",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\psoxkqmpgq-e5tk7yf482.gz",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\psoxkqmpgq-e5tk7yf482.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000556173526"
+          "Quality": "0.000571102227"
         }
       ],
       "ResponseHeaders": [
@@ -1020,15 +1020,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1797"
+          "Value": "1750"
         },
         {
           "Name": "ETag",
-          "Value": "\"ismDfJHkNHfoqxdRjvM7D0cvQOeIn31cbNUC6dB4m9A=\""
+          "Value": "\"qQ+vo7zHfjEIsR7Ks2Vsx0CJAT5ngXzV3IUcVLWwEfw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1068,7 +1068,7 @@
     },
     {
       "Route": "css/app.e5tk7yf482.css",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\app.css",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\css\\app.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1089,7 +1089,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1113,7 +1113,7 @@
     },
     {
       "Route": "css/app.e5tk7yf482.css.gz",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\psoxkqmpgq-e5tk7yf482.gz",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\psoxkqmpgq-e5tk7yf482.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1122,7 +1122,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1797"
+          "Value": "1750"
         },
         {
           "Name": "Content-Type",
@@ -1130,11 +1130,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ismDfJHkNHfoqxdRjvM7D0cvQOeIn31cbNUC6dB4m9A=\""
+          "Value": "\"qQ+vo7zHfjEIsR7Ks2Vsx0CJAT5ngXzV3IUcVLWwEfw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1160,18 +1160,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ismDfJHkNHfoqxdRjvM7D0cvQOeIn31cbNUC6dB4m9A="
+          "Value": "sha256-qQ+vo7zHfjEIsR7Ks2Vsx0CJAT5ngXzV3IUcVLWwEfw="
         }
       ]
     },
     {
       "Route": "css/bootstrap/bootstrap.min.6gzpyzhau4.css",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\ob328u0gp5-6gzpyzhau4.gz",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\ob328u0gp5-6gzpyzhau4.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000041912905"
+          "Quality": "0.000041844506"
         }
       ],
       "ResponseHeaders": [
@@ -1181,15 +1181,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "23858"
+          "Value": "23897"
         },
         {
           "Name": "ETag",
-          "Value": "\"dfRdV3FWJNHUyN/ZTK8eRHslFtdOjQxpi1BEcWXtMR8=\""
+          "Value": "\"LTxu1aeZz5yJTTAB+DiLnn5XOMdK1oiypNP/4JaeK9c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1229,7 +1229,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.6gzpyzhau4.css",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1250,7 +1250,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1274,7 +1274,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.6gzpyzhau4.css.gz",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\ob328u0gp5-6gzpyzhau4.gz",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\ob328u0gp5-6gzpyzhau4.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1283,7 +1283,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "23858"
+          "Value": "23897"
         },
         {
           "Name": "Content-Type",
@@ -1291,11 +1291,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"dfRdV3FWJNHUyN/ZTK8eRHslFtdOjQxpi1BEcWXtMR8=\""
+          "Value": "\"LTxu1aeZz5yJTTAB+DiLnn5XOMdK1oiypNP/4JaeK9c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1321,18 +1321,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-dfRdV3FWJNHUyN/ZTK8eRHslFtdOjQxpi1BEcWXtMR8="
+          "Value": "sha256-LTxu1aeZz5yJTTAB+DiLnn5XOMdK1oiypNP/4JaeK9c="
         }
       ]
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\ob328u0gp5-6gzpyzhau4.gz",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\ob328u0gp5-6gzpyzhau4.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000041912905"
+          "Quality": "0.000041844506"
         }
       ],
       "ResponseHeaders": [
@@ -1342,15 +1342,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "23858"
+          "Value": "23897"
         },
         {
           "Name": "ETag",
-          "Value": "\"dfRdV3FWJNHUyN/ZTK8eRHslFtdOjQxpi1BEcWXtMR8=\""
+          "Value": "\"LTxu1aeZz5yJTTAB+DiLnn5XOMdK1oiypNP/4JaeK9c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1382,7 +1382,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1403,7 +1403,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1419,12 +1419,12 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css.8inm30yfxf.map",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\lvftehb1nf-8inm30yfxf.gz",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\lvftehb1nf-8inm30yfxf.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000013397104"
+          "Quality": "0.000013350065"
         }
       ],
       "ResponseHeaders": [
@@ -1434,15 +1434,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "74642"
+          "Value": "74905"
         },
         {
           "Name": "ETag",
-          "Value": "\"epiz+IkftKdCVrNwM3M3b4/Co3mxoqDpjOfMrHfv/7E=\""
+          "Value": "\"Kym5HpgDYV8Caci50HDUPG6WCQ6nTP+8hy429w+zHVU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1482,7 +1482,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css.8inm30yfxf.map",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1503,7 +1503,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1527,7 +1527,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css.8inm30yfxf.map.gz",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\lvftehb1nf-8inm30yfxf.gz",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\lvftehb1nf-8inm30yfxf.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1536,7 +1536,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "74642"
+          "Value": "74905"
         },
         {
           "Name": "Content-Type",
@@ -1544,11 +1544,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"epiz+IkftKdCVrNwM3M3b4/Co3mxoqDpjOfMrHfv/7E=\""
+          "Value": "\"Kym5HpgDYV8Caci50HDUPG6WCQ6nTP+8hy429w+zHVU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1574,13 +1574,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-epiz+IkftKdCVrNwM3M3b4/Co3mxoqDpjOfMrHfv/7E="
+          "Value": "sha256-Kym5HpgDYV8Caci50HDUPG6WCQ6nTP+8hy429w+zHVU="
         }
       ]
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css.gz",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\ob328u0gp5-6gzpyzhau4.gz",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\ob328u0gp5-6gzpyzhau4.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1589,7 +1589,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "23858"
+          "Value": "23897"
         },
         {
           "Name": "Content-Type",
@@ -1597,11 +1597,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"dfRdV3FWJNHUyN/ZTK8eRHslFtdOjQxpi1BEcWXtMR8=\""
+          "Value": "\"LTxu1aeZz5yJTTAB+DiLnn5XOMdK1oiypNP/4JaeK9c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1619,18 +1619,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-dfRdV3FWJNHUyN/ZTK8eRHslFtdOjQxpi1BEcWXtMR8="
+          "Value": "sha256-LTxu1aeZz5yJTTAB+DiLnn5XOMdK1oiypNP/4JaeK9c="
         }
       ]
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css.map",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\lvftehb1nf-8inm30yfxf.gz",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\lvftehb1nf-8inm30yfxf.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000013397104"
+          "Quality": "0.000013350065"
         }
       ],
       "ResponseHeaders": [
@@ -1640,15 +1640,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "74642"
+          "Value": "74905"
         },
         {
           "Name": "ETag",
-          "Value": "\"epiz+IkftKdCVrNwM3M3b4/Co3mxoqDpjOfMrHfv/7E=\""
+          "Value": "\"Kym5HpgDYV8Caci50HDUPG6WCQ6nTP+8hy429w+zHVU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1680,7 +1680,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css.map",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1701,7 +1701,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1717,7 +1717,7 @@
     },
     {
       "Route": "css/bootstrap/bootstrap.min.css.map.gz",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\lvftehb1nf-8inm30yfxf.gz",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\lvftehb1nf-8inm30yfxf.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1726,7 +1726,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "74642"
+          "Value": "74905"
         },
         {
           "Name": "Content-Type",
@@ -1734,11 +1734,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"epiz+IkftKdCVrNwM3M3b4/Co3mxoqDpjOfMrHfv/7E=\""
+          "Value": "\"Kym5HpgDYV8Caci50HDUPG6WCQ6nTP+8hy429w+zHVU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1756,18 +1756,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-epiz+IkftKdCVrNwM3M3b4/Co3mxoqDpjOfMrHfv/7E="
+          "Value": "sha256-Kym5HpgDYV8Caci50HDUPG6WCQ6nTP+8hy429w+zHVU="
         }
       ]
     },
     {
       "Route": "index.html",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\1t0ms7y7r2-uqf925phnj.gz",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\1t0ms7y7r2-uqf925phnj.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.002212389381"
+          "Quality": "0.002222222222"
         }
       ],
       "ResponseHeaders": [
@@ -1777,15 +1777,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "451"
+          "Value": "449"
         },
         {
           "Name": "ETag",
-          "Value": "\"aDdIbyb0qQS3P4s019zwxY5MtQDmOtKIQT/EIBWUzn8=\""
+          "Value": "\"aHDipx4PoI2L7VqM5bmVx6BP85myM79rgaDnquLHJY8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1817,7 +1817,7 @@
     },
     {
       "Route": "index.html",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\index.html",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1838,7 +1838,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1854,7 +1854,7 @@
     },
     {
       "Route": "index.html.gz",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\1t0ms7y7r2-uqf925phnj.gz",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\1t0ms7y7r2-uqf925phnj.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1863,7 +1863,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "451"
+          "Value": "449"
         },
         {
           "Name": "Content-Type",
@@ -1871,11 +1871,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"aDdIbyb0qQS3P4s019zwxY5MtQDmOtKIQT/EIBWUzn8=\""
+          "Value": "\"aHDipx4PoI2L7VqM5bmVx6BP85myM79rgaDnquLHJY8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1893,18 +1893,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-aDdIbyb0qQS3P4s019zwxY5MtQDmOtKIQT/EIBWUzn8="
+          "Value": "sha256-aHDipx4PoI2L7VqM5bmVx6BP85myM79rgaDnquLHJY8="
         }
       ]
     },
     {
       "Route": "index.uqf925phnj.html",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\1t0ms7y7r2-uqf925phnj.gz",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\1t0ms7y7r2-uqf925phnj.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.002212389381"
+          "Quality": "0.002222222222"
         }
       ],
       "ResponseHeaders": [
@@ -1914,15 +1914,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "451"
+          "Value": "449"
         },
         {
           "Name": "ETag",
-          "Value": "\"aDdIbyb0qQS3P4s019zwxY5MtQDmOtKIQT/EIBWUzn8=\""
+          "Value": "\"aHDipx4PoI2L7VqM5bmVx6BP85myM79rgaDnquLHJY8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1962,7 +1962,7 @@
     },
     {
       "Route": "index.uqf925phnj.html",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\wwwroot\\index.html",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1983,7 +1983,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2007,7 +2007,7 @@
     },
     {
       "Route": "index.uqf925phnj.html.gz",
-      "AssetFile": "C:\\Users\\Administrator\\RiderProjects\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\1t0ms7y7r2-uqf925phnj.gz",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\1t0ms7y7r2-uqf925phnj.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2016,7 +2016,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "451"
+          "Value": "449"
         },
         {
           "Name": "Content-Type",
@@ -2024,11 +2024,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"aDdIbyb0qQS3P4s019zwxY5MtQDmOtKIQT/EIBWUzn8=\""
+          "Value": "\"aHDipx4PoI2L7VqM5bmVx6BP85myM79rgaDnquLHJY8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 23 Apr 2025 20:19:06 GMT"
+          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2054,7 +2054,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-aDdIbyb0qQS3P4s019zwxY5MtQDmOtKIQT/EIBWUzn8="
+          "Value": "sha256-aHDipx4PoI2L7VqM5bmVx6BP85myM79rgaDnquLHJY8="
         }
       ]
     }

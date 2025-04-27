@@ -1,6 +1,280 @@
-﻿@page "/Equipment"
-<h3>Equipment</h3>
+﻿@page "/equipment"
+@using CPRG211FinalProject.Components.Utils
+@inject IJSRuntime JS
+
+<div style="text-align: center">
+    <div>
+        <h2>Locate equipment in database</h2>
+    </div>
+    <div>
+        <input @bind="serialNumber" placeholder="Serial Number" style="border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px; padding-left: 10px;" />
+    </div>
+    <div>
+        <input @bind="productNumber" placeholder="Product Number" style="border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px; padding-left: 10px;" />
+    </div>
+    <div>
+        <input @bind="description" placeholder="Description" style="border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px; padding-left: 10px;" />
+    </div>
+    <div>
+        <input @bind="location" placeholder="Location" style="border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px; padding-left: 10px;" />
+    </div>
+
+    <div class="justify-content-center">
+        <button @onclick="SearchEquipment" class="bg-success" style="border-radius: 10px; border: 0; min-width: 90px;">Search</button>
+        <button @onclick="RefreshEquipment" class="bg-success" style="border-radius: 10px; border: 0; min-width: 90px;">Refresh</button>
+        <button @onclick="ToggleAddEquipmentMenu" class="bg-success" style="border-radius: 10px; border: 0; min-width: 90px;">Add Equipment</button>
+    </div>
+
+    <br />
+
+    @if (equipmentList.Count != 0)
+    {
+        <div>
+            <h3>Equipment found:</h3>
+        </div>
+    }
+
+    @foreach (var equipment in equipmentList)
+    {
+        <div class="rounded px-3 py-2 mb-2" style="background-color: #d9d9d9; min-width: 500px; cursor: pointer;" @onclick="() => OpenEditEquipmentMenu(equipment)">
+            <div class="w-100" style="min-width: fit-content;">
+                <div class="row">
+                    <div class="col-6">
+                        <div>Serial #: @equipment.SerialNumber</div>
+                        <div>Product #: @equipment.ProductNumber</div>
+                    </div>
+                    <div class="col-6">
+                        <div>Description: @equipment.Description</div>
+                        <div>Location: @equipment.Location</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+    @if (searchReturnedNone)
+    {
+        <p style="color: #2c3034;">No results found</p>
+    }
+</div>
+
+@if (showAddEquipmentMenu)
+{
+    <div style="position: fixed; top: 0; right: 0; width: 300px; height: 100%; background-color: #f8f9fa; box-shadow: -2px 0 5px rgba(0,0,0,0.1); padding: 20px;">
+        <h3>@(isEditingEquipment ? "Edit Equipment" : "Add Equipment")</h3>
+        <div>
+            <input @bind="newSerialNumber" placeholder="Serial Number" style="width: 100%; border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px;" />
+        </div>
+        <div>
+            <input @bind="newProductNumber" placeholder="Product Number" style="width: 100%; border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px;" />
+        </div>
+        <div>
+            <input @bind="newDescription" placeholder="Description" style="width: 100%; border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px;" />
+        </div>
+        <div>
+            <input @bind="newLocation" placeholder="Location" style="width: 100%; border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px;" />
+        </div>
+        <button @onclick="SaveEquipment" class="bg-success" style="width: 100%; border: 0; border-radius: 5px; margin-bottom: 10px;">Save</button>
+        @if (isEditingEquipment)
+        {
+            <button @onclick="DeleteEquipment" class="bg-danger" style="width: 100%; border: 0; border-radius: 5px; margin-bottom: 10px;">Delete</button>
+        }
+        <button @onclick="ToggleAddEquipmentMenu" class="bg-success" style="width: 100%; border: 0; border-radius: 5px;">Cancel</button>
+    </div>
+}
 
 @code {
-    
+    private string serialNumber { get; set; }
+    private string productNumber { get; set; }
+    private string description { get; set; }
+    private string location { get; set; }
+    private List<EquipmentObj> equipmentList = new();
+    private bool searchReturnedNone { get; set; }
+    private bool showAddEquipmentMenu { get; set; } = false;
+    private bool isEditingEquipment { get; set; } = false;
+    private EquipmentObj? selectedEquipment { get; set; }
+    private string newSerialNumber { get; set; }
+    private string newProductNumber { get; set; }
+    private string newDescription { get; set; }
+    private string newLocation { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadAllEquipment();
+    }
+
+    private async Task LoadAllEquipment()
+    {
+        equipmentList.Clear();
+        var data = await new Database().ExecuteQueryWithResult("SELECT * FROM Equipment");
+
+        foreach (var equipment in data)
+        {
+            equipmentList.Add(new EquipmentObj(
+                (string)equipment["SERIALNUMBER"],
+                (string)equipment["PRODUCTNUMBER"],
+                (string)equipment["DESCRIPTION"],
+                (string)equipment["LOCATION"]
+            ));
+        }
+    }
+
+    private async Task SearchEquipment()
+    {
+        try
+        {
+            if (string.IsNullOrWhiteSpace(serialNumber) &&
+                string.IsNullOrWhiteSpace(productNumber) &&
+                string.IsNullOrWhiteSpace(description) &&
+                string.IsNullOrWhiteSpace(location))
+            {
+                throw new InvalidInputException("Please enter at least one field to search.");
+            }
+
+            searchReturnedNone = false;
+            equipmentList.Clear();
+
+            var conditions = new List<string>();
+
+            if (!string.IsNullOrWhiteSpace(serialNumber))
+                conditions.Add($"SerialNumber LIKE '%{serialNumber}%'");
+
+            if (!string.IsNullOrWhiteSpace(productNumber))
+                conditions.Add($"ProductNumber LIKE '%{productNumber}%'");
+
+            if (!string.IsNullOrWhiteSpace(description))
+                conditions.Add($"Description LIKE '%{description}%'");
+
+            if (!string.IsNullOrWhiteSpace(location))
+                conditions.Add($"Location LIKE '%{location}%'");
+
+            string whereClause = string.Join(" AND ", conditions);
+
+            var data = await new Database().ExecuteQueryWithResult($"SELECT * FROM Equipment WHERE {whereClause}");
+
+            foreach (var equipment in data)
+            {
+                equipmentList.Add(new EquipmentObj(
+                    (string)equipment["SERIALNUMBER"],
+                    (string)equipment["PRODUCTNUMBER"],
+                    (string)equipment["DESCRIPTION"],
+                    (string)equipment["LOCATION"]
+                ));
+            }
+
+            // If no equipment matched, show "no results found"
+            searchReturnedNone = equipmentList.Count == 0;
+        }
+        catch (InvalidInputException ex)
+        {
+            await DisplayAlert("Invalid Input", ex.Message, "Try Again");
+            searchReturnedNone = true;
+            equipmentList.Clear();
+        }
+        finally
+        {
+            serialNumber = null;
+            productNumber = null;
+            description = null;
+            location = null;
+        }
+    }
+
+
+    private async Task RefreshEquipment()
+    {
+        serialNumber = string.Empty;
+        productNumber = string.Empty;
+        description = string.Empty;
+        location = string.Empty;
+        searchReturnedNone = false;
+        await LoadAllEquipment();
+    }
+
+    private void ToggleAddEquipmentMenu()
+    {
+        showAddEquipmentMenu = !showAddEquipmentMenu;
+        if (!showAddEquipmentMenu)
+        {
+            ResetEquipmentForm();
+        }
+    }
+
+    private void OpenEditEquipmentMenu(EquipmentObj equipment)
+    {
+        selectedEquipment = equipment;
+        newSerialNumber = equipment.SerialNumber;
+        newProductNumber = equipment.ProductNumber;
+        newDescription = equipment.Description;
+        newLocation = equipment.Location;
+        isEditingEquipment = true;
+        showAddEquipmentMenu = true;
+    }
+
+    private async Task SaveEquipment()
+    {
+        try
+        {
+            if (string.IsNullOrWhiteSpace(newSerialNumber))
+            {
+                throw new InvalidInputException("Serial number cannot be empty.");
+            }
+
+            if (string.IsNullOrWhiteSpace(newProductNumber))
+            {
+                throw new InvalidInputException("Product number cannot be empty.");
+            }
+
+            if (isEditingEquipment && selectedEquipment != null)
+            {
+                new Database().UpdateEquipment(
+                    newSerialNumber,
+                    newProductNumber,
+                    newDescription,
+                    newLocation
+                );
+            }
+            else
+            {
+                new Database().AddEquipment(
+                    newSerialNumber,
+                    newProductNumber,
+                    newDescription,
+                    newLocation
+                );
+            }
+
+            await LoadAllEquipment();
+            ToggleAddEquipmentMenu();
+        }
+        catch (InvalidInputException ex)
+        {
+            await DisplayAlert("Invalid Input", ex.Message, "Try Again");
+        }
+    }
+
+    private async Task DeleteEquipment()
+    {
+        if (selectedEquipment != null)
+        {
+            new Database().RemoveEquipment(selectedEquipment.SerialNumber);
+            await LoadAllEquipment();
+            ToggleAddEquipmentMenu();
+        }
+    }
+
+    private void ResetEquipmentForm()
+    {
+        newSerialNumber = string.Empty;
+        newProductNumber = string.Empty;
+        newDescription = string.Empty;
+        newLocation = string.Empty;
+        isEditingEquipment = false;
+        selectedEquipment = null;
+    }
+
+    private async Task DisplayAlert(string title, string message, string button)
+    {
+        await JS.InvokeVoidAsync("displayAlert", title, message, button);
+    }
 }

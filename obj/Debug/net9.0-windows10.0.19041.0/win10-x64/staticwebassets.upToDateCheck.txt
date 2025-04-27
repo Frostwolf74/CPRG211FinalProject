@@ -1,0 +1,8 @@
+C:\Users\Nick\Source\Repos\CPRG211FinalProject\wwwroot\index.html
+C:\Users\Nick\Source\Repos\CPRG211FinalProject\wwwroot\css\bootstrap\bootstrap.min.css.map
+C:\Users\Nick\Source\Repos\CPRG211FinalProject\wwwroot\css\bootstrap\bootstrap.min.css
+C:\Users\Nick\Source\Repos\CPRG211FinalProject\wwwroot\css\app.css
+wwwroot\css\app.css
+wwwroot\css\bootstrap\bootstrap.min.css
+wwwroot\css\bootstrap\bootstrap.min.css.map
+wwwroot\index.html
