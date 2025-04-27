@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CPRG211FinalProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+2666cef7b8d48d71c7c7513b47a50e1618159aa5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+a54caa1812fe957500e976a3a5a87143faea94ce")]
 [assembly: System.Reflection.AssemblyProductAttribute("CPRG211FinalProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CPRG211FinalProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

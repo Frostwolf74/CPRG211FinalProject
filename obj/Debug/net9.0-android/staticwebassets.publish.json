@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "M1vydTVa31YUnrml8kSqN66uqIraXpNBPXuDSI8QvUk=",
+  "Hash": "G9SLbZDiFux4dwO4YURIVBJQ+EUQZtAyczXYtwQhEqY=",
   "Source": "CPRG211FinalProject",
   "BasePath": "/",
   "Mode": "Root",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\1t0ms7y7r2-uqf925phnj.gz",
+      "Identity": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\1t0ms7y7r2-6pfx7bz2fj.gz",
       "SourceId": "CPRG211FinalProject",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "index#[.{fingerprint=uqf925phnj}]?.html.gz",
+      "RelativePath": "index#[.{fingerprint=6pfx7bz2fj}]?.html.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -31,8 +31,8 @@
       "RelatedAsset": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\index.html",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "809srege4d",
-      "Integrity": "aHDipx4PoI2L7VqM5bmVx6BP85myM79rgaDnquLHJY8=",
+      "Fingerprint": "mptho3eo7b",
+      "Integrity": "VmtAVB+LFUSHSo3xYUpDJO2uIraJzZ9SFjy5BzjjK0c=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\index.html"
@@ -143,12 +143,12 @@
       "OriginalItemSpec": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\css\\app.css"
     },
     {
-      "Identity": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\publish\\1t0ms7y7r2-uqf925phnj.br",
+      "Identity": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\publish\\1t0ms7y7r2-6pfx7bz2fj.br",
       "SourceId": "CPRG211FinalProject",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\publish\\",
       "BasePath": "/",
-      "RelativePath": "index#[.{fingerprint=uqf925phnj}]?.html.br",
+      "RelativePath": "index#[.{fingerprint=6pfx7bz2fj}]?.html.br",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -157,8 +157,8 @@
       "RelatedAsset": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\index.html",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "br",
-      "Fingerprint": "2qdw4usgwr",
-      "Integrity": "hnbNAl61yaHEI0ukVNWr2uKqIzNG++BTNx3tZwD06u0=",
+      "Fingerprint": "v8xksh0wcw",
+      "Integrity": "sZoqybK2kM+Df00yZSNgsP/6rPGQlntUAfvm4UleiFQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\index.html"
@@ -388,8 +388,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "uqf925phnj",
-      "Integrity": "CgJDyag9Yuex53ZnmLzdb9bxEDGTDQ7UM5lM2vO2meU=",
+      "Fingerprint": "6pfx7bz2fj",
+      "Integrity": "uvCGFmBPQqANvbAOGw2NZJD8HxkHRxZrV0Rd+E+q1/8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
@@ -2967,13 +2967,13 @@
       ]
     },
     {
-      "Route": "index.html",
-      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\1t0ms7y7r2-uqf925phnj.gz",
+      "Route": "index.6pfx7bz2fj.html",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\1t0ms7y7r2-6pfx7bz2fj.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.002222222222"
+          "Quality": "0.001949317739"
         }
       ],
       "ResponseHeaders": [
@@ -2983,19 +2983,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "449"
+          "Value": "512"
         },
         {
           "Name": "ETag",
-          "Value": "\"aHDipx4PoI2L7VqM5bmVx6BP85myM79rgaDnquLHJY8=\""
+          "Value": "\"VmtAVB+LFUSHSo3xYUpDJO2uIraJzZ9SFjy5BzjjK0c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
+          "Value": "Sun, 27 Apr 2025 10:16:13 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -3011,24 +3011,32 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"CgJDyag9Yuex53ZnmLzdb9bxEDGTDQ7UM5lM2vO2meU=\""
+          "Value": "W/\"uvCGFmBPQqANvbAOGw2NZJD8HxkHRxZrV0Rd+E+q1/8=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "6pfx7bz2fj"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-CgJDyag9Yuex53ZnmLzdb9bxEDGTDQ7UM5lM2vO2meU="
+          "Value": "sha256-uvCGFmBPQqANvbAOGw2NZJD8HxkHRxZrV0Rd+E+q1/8="
         }
       ]
     },
     {
-      "Route": "index.html",
-      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\publish\\1t0ms7y7r2-uqf925phnj.br",
+      "Route": "index.6pfx7bz2fj.html",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\publish\\1t0ms7y7r2-6pfx7bz2fj.br",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "br",
-          "Quality": "0.003246753247"
+          "Quality": "0.002785515320"
         }
       ],
       "ResponseHeaders": [
@@ -3038,19 +3046,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "307"
+          "Value": "358"
         },
         {
           "Name": "ETag",
-          "Value": "\"hnbNAl61yaHEI0ukVNWr2uKqIzNG++BTNx3tZwD06u0=\""
+          "Value": "\"sZoqybK2kM+Df00yZSNgsP/6rPGQlntUAfvm4UleiFQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
+          "Value": "Sun, 27 Apr 2025 10:16:13 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -3066,18 +3074,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"CgJDyag9Yuex53ZnmLzdb9bxEDGTDQ7UM5lM2vO2meU=\""
+          "Value": "W/\"uvCGFmBPQqANvbAOGw2NZJD8HxkHRxZrV0Rd+E+q1/8=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "6pfx7bz2fj"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-CgJDyag9Yuex53ZnmLzdb9bxEDGTDQ7UM5lM2vO2meU="
+          "Value": "sha256-uvCGFmBPQqANvbAOGw2NZJD8HxkHRxZrV0Rd+E+q1/8="
         }
       ]
     },
     {
-      "Route": "index.html",
+      "Route": "index.6pfx7bz2fj.html",
       "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3087,7 +3103,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "871"
+          "Value": "1016"
         },
         {
           "Name": "Content-Type",
@@ -3095,264 +3111,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"CgJDyag9Yuex53ZnmLzdb9bxEDGTDQ7UM5lM2vO2meU=\""
+          "Value": "\"uvCGFmBPQqANvbAOGw2NZJD8HxkHRxZrV0Rd+E+q1/8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-CgJDyag9Yuex53ZnmLzdb9bxEDGTDQ7UM5lM2vO2meU="
-        }
-      ]
-    },
-    {
-      "Route": "index.html.br",
-      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\publish\\1t0ms7y7r2-uqf925phnj.br",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "307"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"hnbNAl61yaHEI0ukVNWr2uKqIzNG++BTNx3tZwD06u0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "br"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-hnbNAl61yaHEI0ukVNWr2uKqIzNG++BTNx3tZwD06u0="
-        }
-      ]
-    },
-    {
-      "Route": "index.html.gz",
-      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\1t0ms7y7r2-uqf925phnj.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "449"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"aHDipx4PoI2L7VqM5bmVx6BP85myM79rgaDnquLHJY8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-aHDipx4PoI2L7VqM5bmVx6BP85myM79rgaDnquLHJY8="
-        }
-      ]
-    },
-    {
-      "Route": "index.uqf925phnj.html",
-      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\1t0ms7y7r2-uqf925phnj.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.002222222222"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "449"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"aHDipx4PoI2L7VqM5bmVx6BP85myM79rgaDnquLHJY8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"CgJDyag9Yuex53ZnmLzdb9bxEDGTDQ7UM5lM2vO2meU=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "uqf925phnj"
-        },
-        {
-          "Name": "label",
-          "Value": "index.html"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-CgJDyag9Yuex53ZnmLzdb9bxEDGTDQ7UM5lM2vO2meU="
-        }
-      ]
-    },
-    {
-      "Route": "index.uqf925phnj.html",
-      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\publish\\1t0ms7y7r2-uqf925phnj.br",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "br",
-          "Quality": "0.003246753247"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "307"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"hnbNAl61yaHEI0ukVNWr2uKqIzNG++BTNx3tZwD06u0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "br"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"CgJDyag9Yuex53ZnmLzdb9bxEDGTDQ7UM5lM2vO2meU=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "uqf925phnj"
-        },
-        {
-          "Name": "label",
-          "Value": "index.html"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-CgJDyag9Yuex53ZnmLzdb9bxEDGTDQ7UM5lM2vO2meU="
-        }
-      ]
-    },
-    {
-      "Route": "index.uqf925phnj.html",
-      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\index.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "871"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"CgJDyag9Yuex53ZnmLzdb9bxEDGTDQ7UM5lM2vO2meU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
+          "Value": "Sun, 27 Apr 2025 10:16:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3362,7 +3125,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uqf925phnj"
+          "Value": "6pfx7bz2fj"
         },
         {
           "Name": "label",
@@ -3370,13 +3133,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-CgJDyag9Yuex53ZnmLzdb9bxEDGTDQ7UM5lM2vO2meU="
+          "Value": "sha256-uvCGFmBPQqANvbAOGw2NZJD8HxkHRxZrV0Rd+E+q1/8="
         }
       ]
     },
     {
-      "Route": "index.uqf925phnj.html.br",
-      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\publish\\1t0ms7y7r2-uqf925phnj.br",
+      "Route": "index.6pfx7bz2fj.html.br",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\publish\\1t0ms7y7r2-6pfx7bz2fj.br",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3385,7 +3148,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "307"
+          "Value": "358"
         },
         {
           "Name": "Content-Type",
@@ -3393,11 +3156,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hnbNAl61yaHEI0ukVNWr2uKqIzNG++BTNx3tZwD06u0=\""
+          "Value": "\"sZoqybK2kM+Df00yZSNgsP/6rPGQlntUAfvm4UleiFQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
+          "Value": "Sun, 27 Apr 2025 10:16:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3415,7 +3178,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uqf925phnj"
+          "Value": "6pfx7bz2fj"
         },
         {
           "Name": "label",
@@ -3423,13 +3186,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-hnbNAl61yaHEI0ukVNWr2uKqIzNG++BTNx3tZwD06u0="
+          "Value": "sha256-sZoqybK2kM+Df00yZSNgsP/6rPGQlntUAfvm4UleiFQ="
         }
       ]
     },
     {
-      "Route": "index.uqf925phnj.html.gz",
-      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\1t0ms7y7r2-uqf925phnj.gz",
+      "Route": "index.6pfx7bz2fj.html.gz",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\1t0ms7y7r2-6pfx7bz2fj.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3438,7 +3201,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "449"
+          "Value": "512"
         },
         {
           "Name": "Content-Type",
@@ -3446,11 +3209,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"aHDipx4PoI2L7VqM5bmVx6BP85myM79rgaDnquLHJY8=\""
+          "Value": "\"VmtAVB+LFUSHSo3xYUpDJO2uIraJzZ9SFjy5BzjjK0c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 10:07:43 GMT"
+          "Value": "Sun, 27 Apr 2025 10:16:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3468,7 +3231,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uqf925phnj"
+          "Value": "6pfx7bz2fj"
         },
         {
           "Name": "label",
@@ -3476,7 +3239,244 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-aHDipx4PoI2L7VqM5bmVx6BP85myM79rgaDnquLHJY8="
+          "Value": "sha256-VmtAVB+LFUSHSo3xYUpDJO2uIraJzZ9SFjy5BzjjK0c="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\1t0ms7y7r2-6pfx7bz2fj.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001949317739"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "512"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VmtAVB+LFUSHSo3xYUpDJO2uIraJzZ9SFjy5BzjjK0c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 10:16:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"uvCGFmBPQqANvbAOGw2NZJD8HxkHRxZrV0Rd+E+q1/8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uvCGFmBPQqANvbAOGw2NZJD8HxkHRxZrV0Rd+E+q1/8="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\publish\\1t0ms7y7r2-6pfx7bz2fj.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.002785515320"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "358"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sZoqybK2kM+Df00yZSNgsP/6rPGQlntUAfvm4UleiFQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 10:16:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"uvCGFmBPQqANvbAOGw2NZJD8HxkHRxZrV0Rd+E+q1/8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uvCGFmBPQqANvbAOGw2NZJD8HxkHRxZrV0Rd+E+q1/8="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1016"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uvCGFmBPQqANvbAOGw2NZJD8HxkHRxZrV0Rd+E+q1/8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 10:16:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uvCGFmBPQqANvbAOGw2NZJD8HxkHRxZrV0Rd+E+q1/8="
+        }
+      ]
+    },
+    {
+      "Route": "index.html.br",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\publish\\1t0ms7y7r2-6pfx7bz2fj.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "358"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sZoqybK2kM+Df00yZSNgsP/6rPGQlntUAfvm4UleiFQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 10:16:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sZoqybK2kM+Df00yZSNgsP/6rPGQlntUAfvm4UleiFQ="
+        }
+      ]
+    },
+    {
+      "Route": "index.html.gz",
+      "AssetFile": "C:\\Users\\Nick\\Source\\Repos\\CPRG211FinalProject\\obj\\Debug\\net9.0-android\\compressed\\1t0ms7y7r2-6pfx7bz2fj.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "512"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VmtAVB+LFUSHSo3xYUpDJO2uIraJzZ9SFjy5BzjjK0c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 10:16:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VmtAVB+LFUSHSo3xYUpDJO2uIraJzZ9SFjy5BzjjK0c="
         }
       ]
     }
