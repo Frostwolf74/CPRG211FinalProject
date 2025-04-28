@@ -1,265 +1,372 @@
 ﻿@page "/customer"
-@using System.Text.RegularExpressions
 @using CPRG211FinalProject.Components.Utils
-@inject IJSRuntime JSRuntime
+@inject IJSRuntime JS
 
-<div style="text-align: center; max-width: 600px; margin: auto;">
-
-    <!-- Customer Search -->
-    <h2>Search Customers</h2>
+<div style="text-align: center;">
     <div>
-        <input @bind="CfirstName" placeholder="First Name" class="search-input" />
-    </div>
-    <div>
-        <input @bind="ClastName" placeholder="Last Name" class="search-input" />
-    </div>
-    <div>
-        <button @onclick="SearchCustomers" class="bg-success action-button">Search</button>
+        <h2>Locate Customers</h2>
     </div>
 
-    @if (customers.Count > 0)
+    <div>
+        <input @bind="searchFirstName" placeholder="First Name" style="border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px; padding-left: 10px;" />
+    </div>
+    <div>
+        <input @bind="searchLastName" placeholder="Last Name" style="border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px; padding-left: 10px;" />
+    </div>
+    <div>
+        <input @bind="searchEmail" placeholder="Email" style="border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px; padding-left: 10px;" />
+    </div>
+    <div>
+        <input @bind="searchPhoneNumber" placeholder="Phone Number" style="border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px; padding-left: 10px;" />
+    </div>
+
+    <div class="justify-content-center">
+        <button @onclick="SearchCustomers" class="bg-success" style="border-radius: 10px; border: 0; min-width: 90px;">Search</button>
+        <button @onclick="RefreshCustomers" class="bg-success" style="border-radius: 10px; border: 0; min-width: 90px;">Refresh</button>
+        <button @onclick="ToggleAddCustomerMenu" class="bg-success" style="border-radius: 10px; border: 0; min-width: 90px;">Add Customer</button>
+    </div>
+
+    <br/>
+
+    @if (customers.Count != 0)
     {
-        <h4>Results</h4>
-        @foreach (var customer in customers)
-        {
-            <div class="result-card">
-                <div><strong>@customer.FirstName</strong> @customer.LastName</div>
-                <div>@customer.Email</div>
-                <div>@customer.PhoneNumber</div>
-                <div>Memberships: @(customer.Memberships != null && customer.Memberships.Any() ? string.Join(", ", customer.Memberships.Select(m => m.Name)) : "(None)")</div>
+            <div><h4>Customer(s) Found:</h4></div>
+    }
+
+    @foreach (var customer in customers)
+    {
+            <div class="rounded px-3 py-2 mb-2" style="background-color: #d9d9d9; min-width: 500px; cursor: pointer;" @onclick="() => OpenEditCustomerMenu(customer)">
+                <div class="w-100">
+                    <div class="row">
+                        <div class="col-6">
+                            <div>@customer.FirstName</div>
+                            <div>@customer.LastName</div>
+                        </div>
+                        <div class="col-6">
+                            <div>@customer.Email</div>
+                            <div>@customer.PhoneNumber</div>
+                        </div>
+                        <div class="col-6">
+                            <div>Membership: @(customer.Memberships != null && customer.Memberships.Any() ? string.Join(", ", customer.Memberships.Select(m => m.Name)) : "(None)")</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        }
     }
-    else if (SearchReturnedNone1)
+
+    @if (searchReturnedNone)
     {
-        <p class="no-result">No customers found.</p>
+            <p style="color: #2c3034;">No results found</p>
     }
 
-    <hr />
-
-    <!-- Equipment Search -->
-    <h2>Search Equipment</h2>
-    <div>
-        <input @bind="ESerialNumber" placeholder="Serial Number" class="search-input" />
-    </div>
-    <div>
-        <button @onclick="SearchEquipment" class="bg-success action-button">Search</button>
-    </div>
-
-    @if (equipment.Count > 0)
-    {
-        <h4>Results</h4>
-        @foreach (var eq in equipment)
-        {
-            <div class="result-card">
-                <div><strong>SN:</strong> @eq.SerialNumber</div>
-                <div><strong>PN:</strong> @eq.ProductNumber</div>
-                <div>@eq.Description</div>
-                <div><em>@eq.Location</em></div>
-            </div>
-        }
-    }
-    else if (SearchReturnedNone2)
-    {
-        <p class="no-result">No equipment found.</p>
-    }
-
-    <hr />
-
-    <!-- Membership Search -->
-    <h2>Search Memberships</h2>
-    <div>
-        <input @bind="MId" placeholder="Membership ID" class="search-input" />
-    </div>
-    <div>
-        <button @onclick="SearchMemberships" class="bg-success action-button">Search</button>
-    </div>
-
-    @if (memberships.Count > 0)
-    {
-        <h4>Results</h4>
-        @foreach (var membership in memberships)
-        {
-            <div class="result-card">
-                <div><strong>@membership.Name</strong></div>
-                <div>Type: @membership.Type</div>
-                <div>Price: $@membership.Price</div>
-            </div>
-        }
-    }
-    else if (SearchReturnedNone3)
-    {
-        <p class="no-result">No memberships found.</p>
-    }
-
+    <br/>
 </div>
 
-<style>
-    .search-input {
-        width: 100%;
-        margin-bottom: 10px;
-        padding: 8px;
-        border: 0;
-        border-radius: 5px;
-        background-color: #d9d9d9;
-    }
+@if (showAddCustomerMenu)
+{
+        <div style="position: fixed; top: 0; right: 0; width: 300px; height: 100%; background-color: #f8f9fa; box-shadow: -2px 0 5px rgba(0,0,0,0.1); padding: 20px;">
+            <h3>@(isEditingCustomer ? "Edit Customer" : "Add Customer")</h3>
 
-    .action-button {
-        border-radius: 10px;
-        border: 0;
-        min-width: 90px;
-        padding: 8px 16px;
-        margin-bottom: 20px;
-    }
+            <div>
+                <input @bind="newCustomerFirstName" placeholder="First Name" style="width: 100%; border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px;" />
+            </div>
+            <div>
+                <input @bind="newCustomerLastName" placeholder="Last Name" style="width: 100%; border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px;" />
+            </div>
+            <div>
+                <input @bind="newCustomerEmail" placeholder="Email" style="width: 100%; border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px;" />
+            </div>
+            <div>
+                <input @bind="newCustomerPhoneNumber" placeholder="Phone Number (xxx-xxx-xxxx)" style="width: 100%; border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px;" />
+            </div>
+            <div>
+                <input list="membershipOptions" @bind="selectedMembershipName" placeholder="Select or type membership..." style="width: 100%; border: 0; border-radius: 5px; background-color: #d9d9d9; margin-bottom: 10px;" />
+                <datalist id="membershipOptions">
+                    <option value="">(No Membership)</option>
+                @foreach (var membership in allMemberships)
+                {
+                            <option value="@membership"></option>
+                }
+                </datalist>
+            </div>
 
-    .result-card {
-        background-color: #d9d9d9;
-        padding: 10px;
-        margin-bottom: 10px;
-        border-radius: 8px;
-        text-align: left;
-    }
-
-    .no-result {
-        color: #2c3034;
-        margin-top: 10px;
-    }
-
-    hr {
-        margin: 30px 0;
-        border: 1px solid #ccc;
-    }
-</style>
-
+            <button @onclick="SaveCustomer" class="bg-success" style="width: 100%; border: 0; border-radius: 5px; margin-bottom: 10px;">Save</button>
+        @if (isEditingCustomer)
+        {
+                    <button @onclick="DeleteCustomer" class="bg-danger" style="width: 100%; border: 0; border-radius: 5px; margin-bottom: 10px;">Delete</button>
+        }
+            <button @onclick="ToggleAddCustomerMenu" class="bg-success" style="width: 100%; border: 0; border-radius: 5px;">Cancel</button>
+        </div>
+}
 @code {
-    private string? CfirstName { get; set; }
-    private string? ClastName { get; set; }
+    private string searchFirstName { get; set; }
+    private string searchLastName { get; set; }
+    private string searchEmail { get; set; }
+    private string searchPhoneNumber { get; set; }
+
     private List<CustomerObj> customers = new();
-    private bool SearchReturnedNone1 { get; set; }
+    private List<string> allMemberships = new();
+    private bool searchReturnedNone { get; set; }
+    private bool showAddCustomerMenu { get; set; }
+    private bool isEditingCustomer { get; set; }
+    private CustomerObj? selectedCustomer { get; set; }
+    private string newCustomerFirstName { get; set; }
+    private string newCustomerLastName { get; set; }
+    private string newCustomerEmail { get; set; }
+    private string newCustomerPhoneNumber { get; set; }
+    private string selectedMembershipName { get; set; }
 
-    private string? ESerialNumber { get; set; }
-    private List<EquipmentObj> equipment = new();
-    private bool SearchReturnedNone2 { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadAllCustomers();
+        await LoadMembershipOptions();
+    }
 
-    private string? MId { get; set; }
-    private List<MembershipObj> memberships = new();
-    private bool SearchReturnedNone3 { get; set; }
+    private async Task LoadAllCustomers()
+    {
+        try
+        {
+            customers.Clear();
+            var data = await new Database().ExecuteQueryWithResult(@"
+                SELECT
+                    c.ID,
+                    c.FirstName,
+                    c.LastName,
+                    c.Email,
+                    c.PhoneNumber,
+                    GROUP_CONCAT(m.Name SEPARATOR ', ') AS Memberships
+                FROM Customer c
+                LEFT JOIN CustomerMembership cm ON c.ID = cm.CustomerId
+                LEFT JOIN Memberships m ON cm.MembershipId = m.Id
+                GROUP BY c.ID, c.FirstName, c.LastName, c.Email, c.PhoneNumber
+            ");
+
+            foreach (var customer in data)
+            {
+                var membershipsRaw = customer["MEMBERSHIPS"] as string ?? "";
+                var membershipsList = membershipsRaw.Split(',', StringSplitOptions.RemoveEmptyEntries)
+                                                     .Select(name => new MembershipObj(name.Trim(), "", 0, 0))
+                                                     .ToList();
+
+                customers.Add(new CustomerObj(
+                    Convert.ToInt32(customer["ID"]),
+                    (string)customer["FIRSTNAME"],
+                    (string)customer["LASTNAME"],
+                    (string)customer["EMAIL"],
+                    (string)customer["PHONENUMBER"],
+                    membershipsList
+                ));
+            }
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlert("Error", $"Failed to load customers: {ex.Message}", "OK");
+        }
+    }
+
+    private async Task LoadMembershipOptions()
+    {
+        try
+        {
+            var data = await new Database().ExecuteQueryWithResult("SELECT Name FROM Memberships");
+            allMemberships = data.Select(m => (string)m["NAME"]).ToList();
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlert("Error", $"Failed to load memberships: {ex.Message}", "OK");
+        }
+    }
 
     private async Task SearchCustomers()
     {
         try
         {
-            if (string.IsNullOrWhiteSpace(CfirstName) && string.IsNullOrWhiteSpace(ClastName))
+            if (string.IsNullOrWhiteSpace(searchFirstName) && string.IsNullOrWhiteSpace(searchLastName) &&
+                string.IsNullOrWhiteSpace(searchEmail) && string.IsNullOrWhiteSpace(searchPhoneNumber))
             {
-                SearchReturnedNone1 = true;
-                customers.Clear();
-                return;
-            }
-
-            if (!string.IsNullOrEmpty(CfirstName) && !Regex.IsMatch(CfirstName, @"^[a-zA-Z0-9_]+$") ||
-                !string.IsNullOrEmpty(ClastName) && !Regex.IsMatch(ClastName, @"^[a-zA-Z0-9_]+$"))
-            {
-                throw new InvalidInputException("Please enter valid letters and/or numbers");
+                throw new InvalidInputException("Please enter at least one field to search.");
             }
 
             customers.Clear();
+            searchReturnedNone = false;
 
-            var data = await new Database().ExecuteQueryWithResult($"SELECT * FROM customer WHERE FirstName = '{CfirstName}' OR LastName = '{ClastName}'");
+            var conditions = new List<string>();
+            if (!string.IsNullOrWhiteSpace(searchFirstName))
+                conditions.Add($"FirstName LIKE '%{searchFirstName}%'");
+            if (!string.IsNullOrWhiteSpace(searchLastName))
+                conditions.Add($"LastName LIKE '%{searchLastName}%'");
+            if (!string.IsNullOrWhiteSpace(searchEmail))
+                conditions.Add($"Email LIKE '%{searchEmail}%'");
+            if (!string.IsNullOrWhiteSpace(searchPhoneNumber))
+                conditions.Add($"PhoneNumber LIKE '%{searchPhoneNumber}%'");
+
+            var whereClause = string.Join(" AND ", conditions);
+            var data = await new Database().ExecuteQueryWithResult($"SELECT * FROM Customer WHERE {whereClause}");
 
             foreach (var customer in data)
             {
                 customers.Add(new CustomerObj(
                     Convert.ToInt32(customer["ID"]),
-                    customer["FIRSTNAME"]?.ToString() ?? "",
-                    customer["LASTNAME"]?.ToString() ?? "",
-                    customer["EMAIL"]?.ToString() ?? "",
-                    customer["PHONENUMBER"]?.ToString(),
-                    null
+                    (string)customer["FIRSTNAME"],
+                    (string)customer["LASTNAME"],
+                    (string)customer["EMAIL"],
+                    (string)customer["PHONENUMBER"],
+                    new List<MembershipObj>()
                 ));
             }
-        }
-        catch (Exception e)
-        {
-            await JSRuntime.InvokeVoidAsync("alert", e.Message);
-        }
 
-        SearchReturnedNone1 = customers.Count == 0;
-        CfirstName = ClastName = null;
+            searchReturnedNone = customers.Count == 0;
+        }
+        catch (InvalidInputException ex)
+        {
+            await DisplayAlert("Invalid Input", ex.Message, "OK");
+            customers.Clear();
+            searchReturnedNone = true;
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlert("Error", $"Search failed: {ex.Message}", "OK");
+            customers.Clear();
+            searchReturnedNone = true;
+        }
+        finally
+        {
+            searchFirstName = searchLastName = searchEmail = searchPhoneNumber = null;
+        }
     }
 
-    private async Task SearchEquipment()
+    private async Task SaveCustomer()
     {
         try
         {
-            if (string.IsNullOrWhiteSpace(ESerialNumber))
+            if (string.IsNullOrWhiteSpace(newCustomerFirstName))
+                throw new InvalidInputException("First name cannot be empty.");
+            if (string.IsNullOrWhiteSpace(newCustomerLastName))
+                throw new InvalidInputException("Last name cannot be empty.");
+            if (!string.IsNullOrWhiteSpace(newCustomerPhoneNumber) && !IsValidPhoneNumber(newCustomerPhoneNumber))
+                throw new InvalidInputException("Phone number must be in the format xxx-xxx-xxxx.");
+            if (!string.IsNullOrWhiteSpace(newCustomerEmail) && !IsValidEmail(newCustomerEmail))
+                throw new InvalidInputException("Invalid email address.");
+
+            var db = new Database();
+
+            if (isEditingCustomer && selectedCustomer != null)
             {
-                SearchReturnedNone2 = true;
-                equipment.Clear();
-                return;
+                db.UpdateCustomer(selectedCustomer.Id, newCustomerFirstName, newCustomerLastName, newCustomerEmail, newCustomerPhoneNumber);
+
+                // Remove old memberships
+                db.RemoveAllCustomerMemberships(selectedCustomer.Id);
+            }
+            else
+            {
+                db.AddCustomer(newCustomerFirstName, newCustomerLastName, newCustomerEmail, newCustomerPhoneNumber);
+
+                // Load the latest inserted customer (by email) to get the ID
+                var result = await db.ExecuteQueryWithResult($"SELECT Id FROM Customer WHERE Email = '{newCustomerEmail}' LIMIT 1");
+                selectedCustomer = new CustomerObj(
+                    Convert.ToInt32(result.First()["ID"]),
+                    newCustomerFirstName,
+                    newCustomerLastName,
+                    newCustomerEmail,
+                    newCustomerPhoneNumber,
+                    new List<MembershipObj>()
+                );
             }
 
-            if (!Regex.IsMatch(ESerialNumber, @"^[A-Z0-9]+$"))
+            // Only link membership if one was selected
+            if (!string.IsNullOrEmpty(selectedMembershipName))
             {
-                throw new InvalidInputException("Please enter a valid alphanumeric serial number.");
+                var membershipResult = await db.ExecuteQueryWithResult($"SELECT Id FROM Memberships WHERE Name = '{selectedMembershipName}' LIMIT 1");
+
+                if (membershipResult.Count > 0)
+                {
+                    int membershipId = Convert.ToInt32(membershipResult.First()["ID"]);
+                    db.AddCustomerMembership(selectedCustomer.Id, membershipId);
+                }
             }
 
-            equipment.Clear();
-
-            var data = await new Database().ExecuteQueryWithResult($"SELECT * FROM equipment WHERE SerialNumber = '{ESerialNumber}'");
-
-            foreach (var eq in data)
-            {
-                equipment.Add(new EquipmentObj(
-                    eq["SERIALNUMBER"]?.ToString() ?? "",
-                    eq["PRODUCTNUMBER"]?.ToString() ?? "",
-                    eq["DESCRIPTION"]?.ToString() ?? "",
-                    eq["LOCATION"]?.ToString() ?? ""
-                ));
-            }
+            await LoadAllCustomers();
+            ToggleAddCustomerMenu();
         }
-        catch (Exception e)
+        catch (InvalidInputException ex)
         {
-            await JSRuntime.InvokeVoidAsync("alert", e.Message);
+            await DisplayAlert("Invalid Input", ex.Message, "OK");
         }
-
-        SearchReturnedNone2 = equipment.Count == 0;
-        ESerialNumber = null;
+        catch (Exception ex)
+        {
+            await DisplayAlert("Error", $"Save failed: {ex.Message}", "OK");
+        }
     }
 
-    private async Task SearchMemberships()
+
+    private async Task DeleteCustomer()
     {
         try
         {
-            if (!int.TryParse(MId, out _))
-                throw new InvalidInputException("Please enter a valid numeric ID.");
-
-            if (MId == null)
+            if (selectedCustomer != null)
             {
-                SearchReturnedNone3 = true;
-                memberships.Clear();
-                return;
-            }
-
-            memberships.Clear();
-
-            var data = await new Database().ExecuteQueryWithResult($"SELECT * FROM memberships WHERE Id = {MId}");
-
-            foreach (var membership in data)
-            {
-                memberships.Add(new MembershipObj(
-                    membership["NAME"]?.ToString() ?? "",
-                    membership["TYPE"]?.ToString() ?? "",
-                    Convert.ToInt32(membership["ID"]),
-                    Convert.ToDouble(membership["PRICE"])
-                ));
+                new Database().RemoveCustomer(selectedCustomer.Id);
+                await LoadAllCustomers();
+                ToggleAddCustomerMenu();
             }
         }
-        catch (Exception e)
+        catch (Exception ex)
         {
-            await JSRuntime.InvokeVoidAsync("alert", e.Message);
+            await DisplayAlert("Error", $"Delete failed: {ex.Message}", "OK");
         }
+    }
 
-        SearchReturnedNone3 = memberships.Count == 0;
-        MId = null;
+    private void ToggleAddCustomerMenu()
+    {
+        showAddCustomerMenu = !showAddCustomerMenu;
+        if (!showAddCustomerMenu)
+        {
+            ResetCustomerForm();
+        }
+    }
+
+    private void OpenEditCustomerMenu(CustomerObj customer)
+    {
+        selectedCustomer = customer;
+        newCustomerFirstName = customer.FirstName;
+        newCustomerLastName = customer.LastName;
+        newCustomerEmail = customer.Email;
+        newCustomerPhoneNumber = customer.PhoneNumber ?? "";
+        selectedMembershipName = customer.Memberships?.FirstOrDefault()?.Name ?? "";
+        isEditingCustomer = true;
+        showAddCustomerMenu = true;
+    }
+
+    private void ResetCustomerForm()
+    {
+        newCustomerFirstName = "";
+        newCustomerLastName = "";
+        newCustomerEmail = "";
+        newCustomerPhoneNumber = "";
+        selectedMembershipName = "";
+        isEditingCustomer = false;
+        selectedCustomer = null;
+    }
+
+    private bool IsValidPhoneNumber(string phoneNumber)
+    {
+        return System.Text.RegularExpressions.Regex.IsMatch(phoneNumber, @"^\d{3}-\d{3}-\d{4}$");
+    }
+
+    private bool IsValidEmail(string email)
+    {
+        return System.Text.RegularExpressions.Regex.IsMatch(email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$");
+    }
+
+    private async Task DisplayAlert(string title, string message, string button)
+    {
+        await JS.InvokeVoidAsync("displayAlert", title, message, button);
+    }
+
+    private async Task RefreshCustomers()
+    {
+        searchFirstName = searchLastName = searchEmail = searchPhoneNumber = "";
+        searchReturnedNone = false;
+        await LoadAllCustomers();
     }
 }
